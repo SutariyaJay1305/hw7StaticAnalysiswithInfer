@@ -1,0 +1,681 @@
+#0
+src/main/java/org/jfree/data/xml/DatasetReader.java:73: error: Resource Leak
+  resource of type `java.io.FileInputStream` acquired by call to `FileInputStream(...)` at line 72 is not released after line 73.
+  71.           throws IOException {
+  72.           InputStream in = new FileInputStream(file);
+  73. >         return readPieDatasetFromXML(in);
+  74.       }
+  75.   
+
+#1
+src/main/java/org/jfree/chart/util/CloneUtils.java:93: error: Inefficient Keyset Iterator
+  Accessing a value using a key that was retrieved from a `keySet` iterator. It is more efficient to use an iterator on the `entrySet` of the map, avoiding the extra `HashMap.get(key)` lookup.
+  91.           Map result = new HashMap();
+  92.           for (Object key : source.keySet()) {
+  93. >             Object value = source.get(key);
+  94.               if (value != null) {
+  95.                   try {
+
+#2
+src/main/java/org/jfree/data/xml/PieDatasetHandler.java:108: error: Null Dereference
+  object returned by `getSubHandlers()` could be null and is dereferenced at line 108.
+  106.           else if (qName.equals(ITEM_TAG)) {
+  107.               ItemHandler subhandler = new ItemHandler(this, this);
+  108. >             getSubHandlers().push(subhandler);
+  109.               subhandler.startElement(namespaceURI, localName, qName, atts);
+  110.           }
+
+#3
+src/main/java/org/jfree/data/xml/CategoryDatasetHandler.java:109: error: Null Dereference
+  object returned by `getSubHandlers()` could be null and is dereferenced at line 109.
+  107.           else if (qName.equals(SERIES_TAG)) {
+  108.               CategorySeriesHandler subhandler = new CategorySeriesHandler(this);
+  109. >             getSubHandlers().push(subhandler);
+  110.               subhandler.startElement(namespaceURI, localName, qName, atts);
+  111.           }
+
+#4
+src/main/java/org/jfree/data/xml/DatasetReader.java:118: error: Resource Leak
+  resource of type `java.io.FileInputStream` acquired by call to `FileInputStream(...)` at line 117 is not released after line 118.
+  116.           throws IOException {
+  117.           InputStream in = new FileInputStream(file);
+  118. >         return readCategoryDatasetFromXML(in);
+  119.       }
+  120.   
+
+#5
+src/main/java/org/jfree/chart/urls/CustomPieURLGenerator.java:186: error: Null Dereference
+  object returned by `getURL(key,pieItem)` could be null and is dereferenced at line 186.
+  184.                   for (Iterator i = keySet.iterator(); i.hasNext();) {
+  185.                   key = (String) i.next();
+  186. >                     if (!getURL(key, pieItem).equals(
+  187.                               generator.getURL(key, pieItem))) {
+  188.                           return false;
+
+#6
+src/main/java/org/jfree/chart/plot/CombinedRangeCategoryPlot.java:177: error: Null Dereference
+  object `null` is dereferenced by call to `setRangeAxis(...)` at line 177.
+  175.           subplot.setWeight(weight);
+  176.           subplot.setInsets(new RectangleInsets(0.0, 0.0, 0.0, 0.0));
+  177. >         subplot.setRangeAxis(null);
+  178.           subplot.setOrientation(getOrientation());
+  179.           subplot.addChangeListener(this);
+
+#7
+src/main/java/org/jfree/chart/plot/CombinedDomainCategoryPlot.java:183: error: Null Dereference
+  object `null` is dereferenced by call to `setDomainAxis(...)` at line 183.
+  181.           subplot.setWeight(weight);
+  182.           subplot.setInsets(new RectangleInsets(0.0, 0.0, 0.0, 0.0));
+  183. >         subplot.setDomainAxis(null);
+  184.           subplot.setOrientation(getOrientation());
+  185.           subplot.addChangeListener(this);
+
+#8
+src/main/java/org/jfree/chart/PolarChartPanel.java:214: error: Null Dereference
+  object returned by `plot.getAxis()` could be null and is dereferenced at line 214.
+  212.          else if (command.equals(POLAR_AUTO_RANGE_ACTION_COMMAND)) {
+  213.              PolarPlot plot = (PolarPlot) getChart().getPlot();
+  214. >            plot.getAxis().setAutoRange(true);
+  215.          }
+  216.          else {
+
+#9
+src/main/java/org/jfree/chart/urls/CustomPieURLGenerator.java:217: error: Inefficient Keyset Iterator
+  Accessing a value using a key that was retrieved from a `keySet` iterator. It is more efficient to use an iterator on the `entrySet` of the map, avoiding the extra `HashMap.get(key)` lookup.
+  215.               for (Iterator j = map.keySet().iterator(); j.hasNext();) {
+  216.                   key = (String) j.next();
+  217. >                 newMap.put(key, map.get(key));
+  218.               }
+  219.   
+
+#10
+src/main/java/org/jfree/chart/text/TextBox.java:276: error: Null Dereference
+  object `bounds` last assigned on line 275 could be null and is dereferenced at line 276.
+  274.           final Rectangle2D bounds
+  275.                   = RectangleAnchor.createRectangle(d2, x, y, anchor);
+  276. >         double xx = bounds.getX();
+  277.           double yy = bounds.getY();
+  278.   
+
+#11
+src/main/java/org/jfree/chart/panel/CrosshairOverlay.java:300: error: Null Dereference
+  object `hotspot` last assigned on line 298 could be null and is dereferenced at line 300.
+  298.                   Shape hotspot = TextUtils.calculateRotatedStringBounds(
+  299.                           label, g2, xx, yy, alignPt, 0.0, TextAnchor.CENTER);
+  300. >                 if (!dataArea.contains(hotspot.getBounds2D())) {
+  301.                       anchor = flipAnchorV(anchor);
+  302.                       pt = calculateLabelPoint(line, anchor, 5, 5);
+
+#12
+src/main/java/org/jfree/chart/plot/dial/DialPointer.java:314: error: Null Dereference
+  object `scale` last assigned on line 313 could be null and is dereferenced at line 314.
+  312.               double value = plot.getValue(this.datasetIndex);
+  313.               DialScale scale = plot.getScaleForDataset(this.datasetIndex);
+  314. >             double angle = scale.valueToAngle(value);
+  315.   
+  316.               Arc2D arc = new Arc2D.Double(arcRect, angle, 0, Arc2D.OPEN);
+
+#13
+src/main/java/org/jfree/chart/panel/CrosshairOverlay.java:357: error: Null Dereference
+  object `hotspot` last assigned on line 355 could be null and is dereferenced at line 357.
+  355.                   Shape hotspot = TextUtils.calculateRotatedStringBounds(
+  356.                           label, g2, xx, yy, alignPt, 0.0, TextAnchor.CENTER);
+  357. >                 if (!dataArea.contains(hotspot.getBounds2D())) {
+  358.                       anchor = flipAnchorH(anchor);
+  359.                       pt = calculateLabelPoint(line, anchor, 5, 5);
+
+#14
+src/main/java/org/jfree/chart/renderer/DefaultPolarItemRenderer.java:610: error: Null Dereference
+  object `axis` last assigned on line 608 could be null and is dereferenced at line 610.
+  608.           ValueAxis axis = plot.getAxis();
+  609.           double centerValue, outerValue;
+  610. >         if (axis.isInverted()) {
+  611.               outerValue = axis.getLowerBound();
+  612.               centerValue = axis.getUpperBound();
+
+#15
+src/main/java/org/jfree/data/time/TimeSeriesCollection.java:641: error: Null Dereference
+  object `series` last assigned on line 640 could be null and is dereferenced at line 641.
+  639.               Comparable seriesKey = (Comparable) iterator.next();
+  640.               TimeSeries series = getSeries(seriesKey);
+  641. >             int count = series.getItemCount();
+  642.               if (count > 0) {
+  643.                   RegularTimePeriod start = series.getTimePeriod(0);
+
+#16
+src/main/java/org/jfree/chart/ChartFactory.java:692: error: Null Dereference
+  object returned by `getPieChart(plot)` could be null and is dereferenced at line 692.
+  690.           if (urls) {
+  691.               PieURLGenerator urlGenerator = new StandardPieURLGenerator();
+  692. >             PiePlot pp = (PiePlot) plot.getPieChart().getPlot();
+  693.               pp.setURLGenerator(urlGenerator);
+  694.           }
+
+#17
+src/main/java/org/jfree/data/time/TimeSeriesCollection.java:699: error: Null Dereference
+  object `series` last assigned on line 698 could be null and is dereferenced at line 699.
+  697.               Comparable seriesKey = (Comparable) iterator.next();
+  698.               TimeSeries series = getSeries(seriesKey);
+  699. >             Range r = series.findValueRange(xRange, this.xPosition, 
+  700.                       this.workingCalendar.getTimeZone());
+  701.               result = Range.combineIgnoringNaN(result, r);
+
+#18
+src/main/java/org/jfree/chart/axis/DateAxis.java:1016: error: Null Dereference
+  object `standardDate` last assigned on line 1014 could be null and is dereferenced at line 1016.
+  1014.               Date standardDate = calculateDateForPosition(
+  1015.                       month, this.tickMarkPosition);
+  1016. >             long millis = standardDate.getTime();
+  1017.               if (millis >= date.getTime()) {
+  1018.                   for (int i = 0; i < count; i++) {
+
+#19
+src/main/java/org/jfree/chart/renderer/xy/XYBarRenderer.java:1024: error: Null Dereference
+  object `anchorPoint` last assigned on line 995 could be null and is dereferenced at line 1024.
+  1022.           if (position != null) {
+  1023.               TextUtils.drawRotatedString(label, g2,
+  1024. >                     (float) anchorPoint.getX(), (float) anchorPoint.getY(),
+  1025.                       position.getTextAnchor(), position.getAngle(),
+  1026.                       position.getRotationAnchor());
+
+#20
+src/main/java/org/jfree/chart/axis/CategoryAxis.java:1072: error: Null Dereference
+  object `position` last assigned on line 1033 could be null and is dereferenced at line 1072.
+  1070.               Rectangle2D area = new Rectangle2D.Double(x0, y0, (x1 - x0),
+  1071.                       (y1 - y0));
+  1072. >             Point2D anchorPoint = position.getCategoryAnchor().getAnchorPoint(area);
+  1073.               TextBlock block = tick.getLabel();
+  1074.               block.draw(g2, (float) anchorPoint.getX(),
+
+#21
+src/main/java/org/jfree/chart/axis/CategoryAxis.java:1149: error: Null Dereference
+  object `position` last assigned on line 1142 could be null and is dereferenced at line 1149.
+  1147.   
+  1148.               float l;
+  1149. >             if (position.getWidthType() == CategoryLabelWidthType.CATEGORY) {
+  1150.                   l = (float) calculateCategorySize(categories.size(), dataArea,
+  1151.                           edge);
+
+#22
+src/main/java/org/jfree/chart/renderer/category/BarRenderer.java:1187: error: Null Dereference
+  object `anchorPoint` last assigned on line 1158 could be null and is dereferenced at line 1187.
+  1185.           if (position != null) {
+  1186.               TextUtils.drawRotatedString(label, g2,
+  1187. >                     (float) anchorPoint.getX(), (float) anchorPoint.getY(),
+  1188.                       position.getTextAnchor(), position.getAngle(),
+  1189.                       position.getRotationAnchor());
+
+#23
+src/main/java/org/jfree/chart/plot/PolarPlot.java:1421: error: Null Dereference
+  object `state` last assigned on line 1399 could be null and is dereferenced at line 1421.
+  1419.                   getForegroundAlpha()));
+  1420.           this.angleTicks = refreshAngleTicks();
+  1421. >         drawGridlines(g2, dataArea, this.angleTicks, state.getTicks());
+  1422.           render(g2, dataArea, info);
+  1423.           g2.setClip(originalClip);
+
+#24
+src/main/java/org/jfree/chart/axis/CategoryAxis.java:1492: error: Inefficient Keyset Iterator
+  Accessing a value using a key that was retrieved from a `keySet` iterator. It is more efficient to use an iterator on the `entrySet` of the map, avoiding the extra `HashMap.get(key)` lookup.
+  1490.                   Comparable key = (Comparable) iterator.next();
+  1491.                   out.writeObject(key);
+  1492. >                 SerialUtils.writePaint((Paint) map.get(key), out);
+  1493.               }
+  1494.           }
+
+#25
+src/main/java/org/jfree/chart/axis/DateAxis.java:1579: error: Null Dereference
+  object `tickDate` last assigned on line 1575 could be null and is dereferenced at line 1579.
+  1577.               }
+  1578.   
+  1579. >             long lowestTickTime = tickDate.getTime();
+  1580.               long distance = unit.addToDate(tickDate, this.timeZone).getTime()
+  1581.                       - lowestTickTime;
+
+#26
+src/main/java/org/jfree/chart/axis/DateAxis.java:1697: error: Null Dereference
+  object `tickDate` last assigned on line 1693 could be null and is dereferenced at line 1697.
+  1695.               }
+  1696.   
+  1697. >             long lowestTickTime = tickDate.getTime();
+  1698.               long distance = unit.addToDate(tickDate, this.timeZone).getTime()
+  1699.                       - lowestTickTime;
+
+#27
+src/main/java/org/jfree/chart/ChartPanel.java:1936: error: Null Dereference
+  object `scaledDataArea` last assigned on line 1932 could be null and is dereferenced at line 1936.
+  1934.           if (hZoom && vZoom) {
+  1935.               // selected rectangle shouldn't extend outside the data area...
+  1936. >             double xmax = Math.min(e.getX(), scaledDataArea.getMaxX());
+  1937.               double ymax = Math.min(e.getY(), scaledDataArea.getMaxY());
+  1938.               this.zoomRectangle = new Rectangle2D.Double(
+
+#28
+src/main/java/org/jfree/chart/ChartPanel.java:1943: error: Null Dereference
+  object `scaledDataArea` last assigned on line 1932 could be null and is dereferenced at line 1943.
+  1941.           }
+  1942.           else if (hZoom) {
+  1943. >             double xmax = Math.min(e.getX(), scaledDataArea.getMaxX());
+  1944.               this.zoomRectangle = new Rectangle2D.Double(
+  1945.                       this.zoomPoint.getX(), scaledDataArea.getMinY(),
+
+#29
+src/main/java/org/jfree/chart/ChartPanel.java:1949: error: Null Dereference
+  object `scaledDataArea` last assigned on line 1932 could be null and is dereferenced at line 1949.
+  1947.           }
+  1948.           else if (vZoom) {
+  1949. >             double ymax = Math.min(e.getY(), scaledDataArea.getMaxY());
+  1950.               this.zoomRectangle = new Rectangle2D.Double(
+  1951.                       scaledDataArea.getMinX(), this.zoomPoint.getY(),
+
+#30
+src/main/java/org/jfree/chart/ChartPanel.java:2010: error: Null Dereference
+  object `screenDataArea` last assigned on line 2007 could be null and is dereferenced at line 2010.
+  2008.                               (int) this.zoomPoint.getX(),
+  2009.                               (int) this.zoomPoint.getY());
+  2010. >                     double maxX = screenDataArea.getMaxX();
+  2011.                       double maxY = screenDataArea.getMaxY();
+  2012.                       // for mouseReleased event, (horizontalZoom || verticalZoom)
+
+#31
+src/main/java/org/jfree/chart/ChartPanel.java:2306: error: Null Dereference
+  object `scaledDataArea` last assigned on line 2302 could be null and is dereferenced at line 2306.
+  2304.           if ((selection.getHeight() > 0) && (selection.getWidth() > 0)) {
+  2305.   
+  2306. >             double hLower = (selection.getMinX() - scaledDataArea.getMinX())
+  2307.                   / scaledDataArea.getWidth();
+  2308.               double hUpper = (selection.getMaxX() - scaledDataArea.getMinX())
+
+#32
+src/main/java/org/jfree/chart/plot/XYPlot.java:3630: error: Null Dereference
+  object returned by `getAxesAtTop(axisCollection)` could be null and is dereferenced at line 3630.
+  3628.           double cursor = dataArea.getMinY() - this.axisOffset.calculateTopOutset(
+  3629.                   dataArea.getHeight());
+  3630. >         Iterator iterator = axisCollection.getAxesAtTop().iterator();
+  3631.           while (iterator.hasNext()) {
+  3632.               ValueAxis axis = (ValueAxis) iterator.next();
+
+#33
+src/main/java/org/jfree/chart/plot/CategoryPlot.java:3798: error: Null Dereference
+  object returned by `getAxesAtTop(axisCollection)` could be null and is dereferenced at line 3798.
+  3796.           double cursor = dataArea.getMinY() - this.axisOffset.calculateTopOutset(
+  3797.                   dataArea.getHeight());
+  3798. >         Iterator iterator = axisCollection.getAxesAtTop().iterator();
+  3799.           while (iterator.hasNext()) {
+  3800.               Axis axis = (Axis) iterator.next();
+
+#34
+src/main/java/org/jfree/chart/plot/CategoryPlot.java:5048: error: Inefficient Keyset Iterator
+  Accessing a value using a key that was retrieved from a `keySet` iterator. It is more efficient to use an iterator on the `entrySet` of the map, avoiding the extra `HashMap.get(key)` lookup.
+  5046.           while (iterator.hasNext()) {
+  5047.               Object key = iterator.next();
+  5048. >             List entry = (List) map.get(key);
+  5049.               Object toAdd = ObjectUtils.deepClone(entry);
+  5050.               clone.put(key, toAdd);
+
+#35
+src/main/java/org/jfree/data/time/DynamicTimeSeriesCollection.java:379: warning: Thread Safety Violation
+  Unprotected write. Non-private method `DynamicTimeSeriesCollection.addSeries(...)` indirectly writes to field `this.maxValue` outside of synchronization.
+ Reporting because another access to the same memory occurs on a background thread, although this access may not.
+  377.               Comparable seriesKey) {
+  378.   
+  379. >         invalidateRangeInfo();
+  380.           int i;
+  381.           if (values == null) {
+
+#36
+src/main/java/org/jfree/data/time/DynamicTimeSeriesCollection.java:439: warning: Thread Safety Violation
+  Unprotected write. Non-private method `DynamicTimeSeriesCollection.addValue(...)` indirectly writes to field `this.maxValue` outside of synchronization.
+ Reporting because another access to the same memory occurs on a background thread, although this access may not.
+  437.        */
+  438.       public void addValue(int seriesNumber, int index, float value) {
+  439. >         invalidateRangeInfo();
+  440.           if (seriesNumber >= this.valueHistory.length) {
+  441.               throw new IllegalArgumentException(
+
+#37
+src/main/java/org/jfree/data/time/DynamicTimeSeriesCollection.java:667: warning: Thread Safety Violation
+  Read/Write race. Non-private method `DynamicTimeSeriesCollection.appendData(...)` reads without synchronization from `this.newestAt`. Potentially races with write in method `DynamicTimeSeriesCollection.advanceTime()`.
+ Reporting because another access to the same memory occurs on a background thread, although this access may not.
+  665.                   this.valueHistory[s] = new ValueSequence(this.historyCount);
+  666.               }
+  667. >             this.valueHistory[s].enterData(this.newestAt, newData[s]);
+  668.           }
+  669.           fireSeriesChanged();
+
+#38
+src/main/java/org/jfree/data/DefaultKeyedValue.java:134: warning: Thread Safety Violation
+  Read/Write race. Non-private method `DefaultKeyedValue.equals(...)` reads without synchronization from `this.value`. Potentially races with write in method `DefaultKeyedValue.setValue(...)`.
+ Reporting because another access to the same memory occurs on a background thread, although this access may not.
+  132.               return false;
+  133.           }
+  134. >         if (this.value != null
+  135.                   ? !this.value.equals(that.value) : that.value != null) {
+  136.               return false;
+
+#39
+src/main/java/org/jfree/data/time/DynamicTimeSeriesCollection.java:334: warning: Thread Safety Violation
+  Read/Write race. Non-private method `DynamicTimeSeriesCollection.findDomainLimits()` indirectly reads without synchronization from `this.pointsInTime.[_]`. Potentially races with write in method `DynamicTimeSeriesCollection.advanceTime()`.
+ Reporting because another access to the same memory occurs on a background thread, although this access may not.
+  332.        */
+  333.       protected void findDomainLimits() {
+  334. >         long startL = getOldestTime().getFirstMillisecond(this.workingCalendar);
+  335.           long endL;
+  336.           if (this.domainIsPointsInTime) {
+
+#40
+src/main/java/org/jfree/data/time/DynamicTimeSeriesCollection.java:343: warning: Thread Safety Violation
+  Unprotected write. Non-private method `DynamicTimeSeriesCollection.findDomainLimits()` writes to field `this.domainEnd` outside of synchronization.
+ Reporting because another access to the same memory occurs on a background thread, although this access may not.
+  341.           }
+  342.           this.domainStart = new Long(startL);
+  343. >         this.domainEnd = new Long(endL);
+  344.           this.domainRange = new Range(startL, endL);
+  345.       }
+
+#41
+src/main/java/org/jfree/data/time/DynamicTimeSeriesCollection.java:342: warning: Thread Safety Violation
+  Unprotected write. Non-private method `DynamicTimeSeriesCollection.findDomainLimits()` writes to field `this.domainStart` outside of synchronization.
+ Reporting because another access to the same memory occurs on a background thread, although this access may not.
+  340.               endL = getNewestTime().getLastMillisecond(this.workingCalendar);
+  341.           }
+  342. >         this.domainStart = new Long(startL);
+  343.           this.domainEnd = new Long(endL);
+  344.           this.domainRange = new Range(startL, endL);
+
+#42
+src/main/java/org/jfree/data/time/DynamicTimeSeriesCollection.java:344: warning: Thread Safety Violation
+  Unprotected write. Non-private method `DynamicTimeSeriesCollection.findDomainLimits()` writes to field `this.domainRange` outside of synchronization.
+ Reporting because another access to the same memory occurs on a background thread, although this access may not.
+  342.           this.domainStart = new Long(startL);
+  343.           this.domainEnd = new Long(endL);
+  344. >         this.domainRange = new Range(startL, endL);
+  345.       }
+  346.   
+
+#43
+src/main/java/org/jfree/data/time/DynamicTimeSeriesCollection.java:618: warning: Thread Safety Violation
+  Read/Write race. Non-private method `DynamicTimeSeriesCollection.findMaxValue()` indirectly reads without synchronization from `this.oldestAt`. Potentially races with write in method `DynamicTimeSeriesCollection.advanceTime()`.
+ Reporting because another access to the same memory occurs on a background thread, although this access may not.
+  616.           for (int s = 0; s < getSeriesCount(); s++) {
+  617.               for (int i = 0; i < this.historyCount; i++) {
+  618. >                 double tmp = getYValue(s, i);
+  619.                   if (tmp > max) {
+  620.                       max = tmp;
+
+#44
+src/main/java/org/jfree/data/time/DynamicTimeSeriesCollection.java:891: warning: Thread Safety Violation
+  Unprotected write. Non-private method `DynamicTimeSeriesCollection.getDomainBounds(...)` indirectly writes to field `this.domainEnd` outside of synchronization.
+ Reporting because another access to the same memory occurs on a background thread, although this access may not.
+  889.       public Range getDomainBounds(boolean includeInterval) {
+  890.           if (this.domainRange == null) {
+  891. >             findDomainLimits();
+  892.           }
+  893.           return this.domainRange;
+
+#45
+src/main/java/org/jfree/data/time/DynamicTimeSeriesCollection.java:890: warning: Thread Safety Violation
+  Read/Write race. Non-private method `DynamicTimeSeriesCollection.getDomainBounds(...)` reads without synchronization from `this.domainRange`. Potentially races with write in method `DynamicTimeSeriesCollection.advanceTime()`.
+ Reporting because another access to the same memory occurs on a background thread, although this access may not.
+  888.       @Override
+  889.       public Range getDomainBounds(boolean includeInterval) {
+  890. >         if (this.domainRange == null) {
+  891.               findDomainLimits();
+  892.           }
+
+#46
+src/main/java/org/jfree/data/time/DynamicTimeSeriesCollection.java:862: warning: Thread Safety Violation
+  Read/Write race. Non-private method `DynamicTimeSeriesCollection.getDomainLowerBound(...)` reads without synchronization from `this.domainStart`. Potentially races with write in method `DynamicTimeSeriesCollection.advanceTime()`.
+ Reporting because another access to the same memory occurs on a background thread, although this access may not.
+  860.       @Override
+  861.       public double getDomainLowerBound(boolean includeInterval) {
+  862. >         return this.domainStart.doubleValue();
+  863.           // a Long kept updated by advanceTime()
+  864.       }
+
+#47
+src/main/java/org/jfree/data/time/DynamicTimeSeriesCollection.java:876: warning: Thread Safety Violation
+  Read/Write race. Non-private method `DynamicTimeSeriesCollection.getDomainUpperBound(...)` reads without synchronization from `this.domainEnd`. Potentially races with write in method `DynamicTimeSeriesCollection.advanceTime()`.
+ Reporting because another access to the same memory occurs on a background thread, although this access may not.
+  874.       @Override
+  875.       public double getDomainUpperBound(boolean includeInterval) {
+  876. >         return this.domainEnd.doubleValue();
+  877.           // a Long kept updated by advanceTime()
+  878.       }
+
+#48
+src/main/java/org/jfree/data/time/DynamicTimeSeriesCollection.java:787: warning: Thread Safety Violation
+  Read/Write race. Non-private method `DynamicTimeSeriesCollection.getEndX(...)` indirectly reads without synchronization from `this.oldestAt`. Potentially races with write in method `DynamicTimeSeriesCollection.advanceTime()`.
+ Reporting because another access to the same memory occurs on a background thread, although this access may not.
+  785.       @Override
+  786.       public Number getEndX(int series, int item) {
+  787. >         RegularTimePeriod tp = this.pointsInTime[translateGet(item)];
+  788.           return new Long(tp.getLastMillisecond(this.workingCalendar));
+  789.       }
+
+#49
+src/main/java/org/jfree/data/time/DynamicTimeSeriesCollection.java:814: warning: Thread Safety Violation
+  Read/Write race. Non-private method `DynamicTimeSeriesCollection.getEndY(...)` indirectly reads without synchronization from `this.oldestAt`. Potentially races with write in method `DynamicTimeSeriesCollection.advanceTime()`.
+ Reporting because another access to the same memory occurs on a background thread, although this access may not.
+  812.       @Override
+  813.       public Number getEndY(int series, int item) {
+  814. >         return getY(series, item);
+  815.       }
+  816.   
+
+#50
+src/main/java/org/jfree/data/time/DynamicTimeSeriesCollection.java:644: warning: Thread Safety Violation
+  Read/Write race. Non-private method `DynamicTimeSeriesCollection.getNewestIndex()` reads without synchronization from `this.newestAt`. Potentially races with write in method `DynamicTimeSeriesCollection.advanceTime()`.
+ Reporting because another access to the same memory occurs on a background thread, although this access may not.
+  642.        */
+  643.       public int getNewestIndex() {
+  644. >         return this.newestAt;
+  645.       }
+  646.   
+
+#51
+src/main/java/org/jfree/data/time/DynamicTimeSeriesCollection.java:706: warning: Thread Safety Violation
+  Read/Write race. Non-private method `DynamicTimeSeriesCollection.getNewestTime()` reads without synchronization from `this.pointsInTime.[_]`. Potentially races with write in method `DynamicTimeSeriesCollection.advanceTime()`.
+ Reporting because another access to the same memory occurs on a background thread, although this access may not.
+  704.        */
+  705.       public RegularTimePeriod getNewestTime() {
+  706. >         return this.pointsInTime[this.newestAt];
+  707.       }
+  708.   
+
+#52
+src/main/java/org/jfree/data/time/DynamicTimeSeriesCollection.java:635: warning: Thread Safety Violation
+  Read/Write race. Non-private method `DynamicTimeSeriesCollection.getOldestIndex()` reads without synchronization from `this.oldestAt`. Potentially races with write in method `DynamicTimeSeriesCollection.advanceTime()`.
+ Reporting because another access to the same memory occurs on a background thread, although this access may not.
+  633.        */
+  634.       public int getOldestIndex() {
+  635. >         return this.oldestAt;
+  636.       }
+  637.   
+
+#53
+src/main/java/org/jfree/data/time/DynamicTimeSeriesCollection.java:715: warning: Thread Safety Violation
+  Read/Write race. Non-private method `DynamicTimeSeriesCollection.getOldestTime()` reads without synchronization from `this.pointsInTime.[_]`. Potentially races with write in method `DynamicTimeSeriesCollection.advanceTime()`.
+ Reporting because another access to the same memory occurs on a background thread, although this access may not.
+  713.        */
+  714.       public RegularTimePeriod getOldestTime() {
+  715. >         return this.pointsInTime[this.oldestAt];
+  716.       }
+  717.   
+
+#54
+src/main/java/org/jfree/data/time/DynamicTimeSeriesCollection.java:967: warning: Thread Safety Violation
+  Read/Write race. Non-private method `DynamicTimeSeriesCollection.getRangeBounds(...)` indirectly reads without synchronization from `this.maxValue`. Potentially races with write in method `DynamicTimeSeriesCollection.advanceTime()`.
+ Reporting because another access to the same memory occurs on a background thread, although this access may not.
+  965.       public Range getRangeBounds(boolean includeInterval) {
+  966.           if (this.valueRange == null) {
+  967. >             double max = getRangeUpperBound(includeInterval);
+  968.               this.valueRange = new Range(0.0, max);
+  969.           }
+
+#55
+src/main/java/org/jfree/data/time/DynamicTimeSeriesCollection.java:968: warning: Thread Safety Violation
+  Unprotected write. Non-private method `DynamicTimeSeriesCollection.getRangeBounds(...)` writes to field `this.valueRange` outside of synchronization.
+ Reporting because another access to the same memory occurs on a background thread, although this access may not.
+  966.           if (this.valueRange == null) {
+  967.               double max = getRangeUpperBound(includeInterval);
+  968. >             this.valueRange = new Range(0.0, max);
+  969.           }
+  970.           return this.valueRange;
+
+#56
+src/main/java/org/jfree/data/time/DynamicTimeSeriesCollection.java:966: warning: Thread Safety Violation
+  Read/Write race. Non-private method `DynamicTimeSeriesCollection.getRangeBounds(...)` reads without synchronization from `this.valueRange`. Potentially races with write in method `DynamicTimeSeriesCollection.advanceTime()`.
+ Reporting because another access to the same memory occurs on a background thread, although this access may not.
+  964.       @Override
+  965.       public Range getRangeBounds(boolean includeInterval) {
+  966. >         if (this.valueRange == null) {
+  967.               double max = getRangeUpperBound(includeInterval);
+  968.               this.valueRange = new Range(0.0, max);
+
+#57
+src/main/java/org/jfree/data/time/DynamicTimeSeriesCollection.java:950: warning: Thread Safety Violation
+  Read/Write race. Non-private method `DynamicTimeSeriesCollection.getRangeUpperBound(...)` reads without synchronization from `this.maxValue`. Potentially races with write in method `DynamicTimeSeriesCollection.advanceTime()`.
+ Reporting because another access to the same memory occurs on a background thread, although this access may not.
+  948.       public double getRangeUpperBound(boolean includeInterval) {
+  949.           double result = Double.NaN;
+  950. >         if (this.maxValue != null) {
+  951.               result = this.maxValue.doubleValue();
+  952.           }
+
+#58
+src/main/java/org/jfree/data/time/DynamicTimeSeriesCollection.java:773: warning: Thread Safety Violation
+  Read/Write race. Non-private method `DynamicTimeSeriesCollection.getStartX(...)` indirectly reads without synchronization from `this.oldestAt`. Potentially races with write in method `DynamicTimeSeriesCollection.advanceTime()`.
+ Reporting because another access to the same memory occurs on a background thread, although this access may not.
+  771.       @Override
+  772.       public Number getStartX(int series, int item) {
+  773. >         RegularTimePeriod tp = this.pointsInTime[translateGet(item)];
+  774.           return new Long(tp.getFirstMillisecond(this.workingCalendar));
+  775.       }
+
+#59
+src/main/java/org/jfree/data/time/DynamicTimeSeriesCollection.java:801: warning: Thread Safety Violation
+  Read/Write race. Non-private method `DynamicTimeSeriesCollection.getStartY(...)` indirectly reads without synchronization from `this.oldestAt`. Potentially races with write in method `DynamicTimeSeriesCollection.advanceTime()`.
+ Reporting because another access to the same memory occurs on a background thread, although this access may not.
+  799.       @Override
+  800.       public Number getStartY(int series, int item) {
+  801. >         return getY(series, item);
+  802.       }
+  803.   
+
+#60
+src/main/java/org/jfree/data/DefaultKeyedValue.java:102: warning: Thread Safety Violation
+  Read/Write race. Non-private method `DefaultKeyedValue.getValue()` reads without synchronization from `this.value`. Potentially races with write in method `DefaultKeyedValue.setValue(...)`.
+ Reporting because another access to the same memory occurs on a background thread, although this access may not.
+  100.       @Override
+  101.       public Number getValue() {
+  102. >         return this.value;
+  103.       }
+  104.   
+
+#61
+src/main/java/org/jfree/data/time/DynamicTimeSeriesCollection.java:730: warning: Thread Safety Violation
+  Read/Write race. Non-private method `DynamicTimeSeriesCollection.getX(...)` indirectly reads without synchronization from `this.oldestAt`. Potentially races with write in method `DynamicTimeSeriesCollection.advanceTime()`.
+ Reporting because another access to the same memory occurs on a background thread, although this access may not.
+  728.       @Override
+  729.       public Number getX(int series, int item) {
+  730. >         RegularTimePeriod tp = this.pointsInTime[translateGet(item)];
+  731.           return new Long(getX(tp));
+  732.       }
+
+#62
+src/main/java/org/jfree/data/time/DynamicTimeSeriesCollection.java:760: warning: Thread Safety Violation
+  Read/Write race. Non-private method `DynamicTimeSeriesCollection.getY(...)` indirectly reads without synchronization from `this.oldestAt`. Potentially races with write in method `DynamicTimeSeriesCollection.advanceTime()`.
+ Reporting because another access to the same memory occurs on a background thread, although this access may not.
+  758.       @Override
+  759.       public Number getY(int series, int item) {
+  760. >         return new Float(getYValue(series, item));
+  761.       }
+  762.   
+
+#63
+src/main/java/org/jfree/data/time/DynamicTimeSeriesCollection.java:747: warning: Thread Safety Violation
+  Read/Write race. Non-private method `DynamicTimeSeriesCollection.getYValue(...)` indirectly reads without synchronization from `this.oldestAt`. Potentially races with write in method `DynamicTimeSeriesCollection.advanceTime()`.
+ Reporting because another access to the same memory occurs on a background thread, although this access may not.
+  745.           // Instead, synchronize the loop that calls it.
+  746.           ValueSequence values = this.valueHistory[series];
+  747. >         return values.getData(translateGet(item));
+  748.       }
+  749.   
+
+#64
+src/main/java/org/jfree/data/DefaultKeyedValue.java:150: warning: Thread Safety Violation
+  Read/Write race. Non-private method `DefaultKeyedValue.hashCode()` reads without synchronization from `this.value`. Potentially races with write in method `DefaultKeyedValue.setValue(...)`.
+ Reporting because another access to the same memory occurs on a background thread, although this access may not.
+  148.           int result;
+  149.           result = (this.key != null ? this.key.hashCode() : 0);
+  150. >         result = 29 * result + (this.value != null ? this.value.hashCode() : 0);
+  151.           return result;
+  152.       }
+
+#65
+src/main/java/org/jfree/data/time/DynamicTimeSeriesCollection.java:606: warning: Thread Safety Violation
+  Unprotected write. Non-private method `DynamicTimeSeriesCollection.invalidateRangeInfo()` writes to field `this.valueRange` outside of synchronization.
+ Reporting because another access to the same memory occurs on a background thread, although this access may not.
+  604.       public void invalidateRangeInfo() {
+  605.           this.maxValue = null;
+  606. >         this.valueRange = null;
+  607.       }
+  608.   
+
+#66
+src/main/java/org/jfree/data/time/DynamicTimeSeriesCollection.java:605: warning: Thread Safety Violation
+  Unprotected write. Non-private method `DynamicTimeSeriesCollection.invalidateRangeInfo()` writes to field `this.maxValue` outside of synchronization.
+ Reporting because another access to the same memory occurs on a background thread, although this access may not.
+  603.        */
+  604.       public void invalidateRangeInfo() {
+  605. >         this.maxValue = null;
+  606.           this.valueRange = null;
+  607.       }
+
+#67
+src/main/java/org/jfree/data/time/DynamicTimeSeriesCollection.java:513: warning: Thread Safety Violation
+  Read/Write race. Non-private method `DynamicTimeSeriesCollection.offsetFromNewest(...)` reads without synchronization from `this.newestAt`. Potentially races with write in method `DynamicTimeSeriesCollection.advanceTime()`.
+ Reporting because another access to the same memory occurs on a background thread, although this access may not.
+  511.        */
+  512.       public int offsetFromNewest(int delta) {
+  513. >         return wrapOffset(this.newestAt + delta);
+  514.       }
+  515.   
+
+#68
+src/main/java/org/jfree/data/time/DynamicTimeSeriesCollection.java:524: warning: Thread Safety Violation
+  Read/Write race. Non-private method `DynamicTimeSeriesCollection.offsetFromOldest(...)` reads without synchronization from `this.oldestAt`. Potentially races with write in method `DynamicTimeSeriesCollection.advanceTime()`.
+ Reporting because another access to the same memory occurs on a background thread, although this access may not.
+  522.        */
+  523.       public int offsetFromOldest(int delta) {
+  524. >         return wrapOffset(this.oldestAt + delta);
+  525.       }
+  526.   
+
+#69
+src/main/java/org/jfree/data/DefaultKeyedValue.java:177: warning: Thread Safety Violation
+  Read/Write race. Non-private method `DefaultKeyedValue.toString()` reads without synchronization from `this.value`. Potentially races with write in method `DefaultKeyedValue.setValue(...)`.
+ Reporting because another access to the same memory occurs on a background thread, although this access may not.
+  175.       @Override
+  176.       public String toString() {
+  177. >         return "(" + this.key.toString() + ", " + this.value.toString() + ")";
+  178.       }
+  179.   
+
+#70
+src/main/java/org/jfree/data/time/DynamicTimeSeriesCollection.java:494: warning: Thread Safety Violation
+  Read/Write race. Non-private method `DynamicTimeSeriesCollection.translateGet(...)` reads without synchronization from `this.oldestAt`. Potentially races with write in method `DynamicTimeSeriesCollection.advanceTime()`.
+ Reporting because another access to the same memory occurs on a background thread, although this access may not.
+  492.        */
+  493.       protected int translateGet(int toFetch) {
+  494. >         if (this.oldestAt == 0) {
+  495.               return toFetch;  // no translation needed
+  496.           }
+
+Found 71 issues
+                                Issue Type(ISSUED_TYPE_ID): #
+          Thread Safety Violation(THREAD_SAFETY_VIOLATION): 36
+                        Null Dereference(NULL_DEREFERENCE): 29
+  Inefficient Keyset Iterator(INEFFICIENT_KEYSET_ITERATOR): 4
+                              Resource Leak(RESOURCE_LEAK): 2
