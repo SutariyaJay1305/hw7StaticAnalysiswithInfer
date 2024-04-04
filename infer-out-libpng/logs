@@ -1,0 +1,2330 @@
+[3949][      debug] Loading models took 25.787ms
+[3950][      debug] Sqlite write daemon: starting up
+[3950][      debug] Sqlite write daemon: set up complete, waiting for connections
+[3949][environment] CWD = /home/mayar/libpng-1.6.40
+[3949][environment] No .inferconfig file found
+[3949][environment] Project root = /home/mayar/libpng-1.6.40
+[3949][environment] INFER_ARGS =   @/tmp/args.tmp.aa9354
+[3949][environment] command line arguments:   /home/mayar/infer-linux64-v1.1.0/bin/infer run --
+[3949][environment]                           make
+[3949][environment] Available memory at startup: 2594 MB
+[3949][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), dotnet-resource-leak (C#/.Net), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java, C#/.Net)
+[3949][environment] Scheduler: file
+[3949][environment] Cores used: 2
+[3949][environment] Infer version v1.1.0
+[3949][environment] Copyright 2009 - present Facebook. All Rights Reserved.
+[3949][environment] 
+[3949][   progress] Capturing in make/cc mode...
+[3949][environment] Running command make with env:
+[3949][environment] (Extend((PATH /home/mayar/infer-linux64-v1.1.0/lib/infer/infer/bin/../lib/wrappers:/home/mayar/miniconda3/condabin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin)(INFER_OLD_PATH /home/mayar/miniconda3/condabin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin)))
+[3949][environment] 
+
+[3962][environment] CWD = /home/mayar/libpng-1.6.40
+[3962][environment] No .inferconfig file found
+[3962][environment] Project root = /home/mayar/libpng-1.6.40
+[3962][environment] INFER_ARGS =   @/tmp/args.tmp.11120b
+[3962][environment] command line arguments:   gcc -E -DHAVE_CONFIG_H -I. -DPNGLIB_LIBNAME=PNG16_0
+[3962][environment]                           -DPNGLIB_VERSION=1.6.40 -DSYMBOL_PREFIX=
+[3962][environment]                           -DPNG_NO_USE_READ_MACROS
+[3962][environment]                           -DPNG_BUILDING_SYMBOL_TABLE pnglibconf.c
+[3962][environment] Available memory at startup: 2561 MB
+[3962][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), dotnet-resource-leak (C#/.Net), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java, C#/.Net)
+[3962][      debug] GC stats for capture:
+[3962][      debug]   minor_words: 27617
+[3962][      debug]   promoted_words: 0
+[3962][      debug]   major_words: 0
+[3962][      debug]   minor_collections: 0
+[3962][      debug]   major_collections: 0
+[3962][      debug]   compactions: 0
+[3962][      debug]   top_heap_words: 188416
+[3962][      debug]   
+[3962][      debug] GC stats for main_process_full:
+[3962][      debug]   minor_words: 1.44985e+06
+[3962][      debug]   promoted_words: 165561
+[3962][      debug]   major_words: 186213
+[3962][      debug]   minor_collections: 4
+[3962][      debug]   major_collections: 2
+[3962][      debug]   compactions: 1
+[3962][      debug]   top_heap_words: 188416
+[3962][      debug]   
+[3962][environment] Scheduler: file
+[3962][environment] Cores used: 2
+[3962][environment] 
+[3978][environment] CWD = /home/mayar/libpng-1.6.40
+[3978][environment] No .inferconfig file found
+[3978][environment] Project root = /home/mayar/libpng-1.6.40
+[3978][environment] INFER_ARGS =   @/tmp/args.tmp.8b86d3
+[3978][environment] command line arguments:   gcc -DHAVE_CONFIG_H -I. -g -O2 -MT
+[3978][environment]                           contrib/tools/pngfix.o -MD -MP -MF
+[3978][environment]                           contrib/tools/.deps/pngfix.Tpo -c -o
+[3978][environment]                           contrib/tools/pngfix.o contrib/tools/pngfix.c
+[3978][environment] Available memory at startup: 2574 MB
+[3978][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), dotnet-resource-leak (C#/.Net), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java, C#/.Net)
+[3978][      debug] 
+[3978][      debug] *** Beginning capture of file /home/mayar/libpng-1.6.40/contrib/tools/pngfix.c ***
+[3978][      debug] Loading the following linters files: /home/mayar/infer-linux64-v1.1.0/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[3978][      debug] Elapsed: 1.704s.
+[3978][      debug] GC stats for capture:
+[3978][      debug]   minor_words: 2.34233e+07
+[3978][      debug]   promoted_words: 1.86851e+06
+[3978][      debug]   major_words: 1.99712e+06
+[3978][      debug]   minor_collections: 27
+[3978][      debug]   major_collections: 3
+[3978][      debug]   compactions: 0
+[3978][      debug]   top_heap_words: 2026496
+[3978][      debug]   
+[3978][      debug] GC stats for main_process_full:
+[3978][      debug]   minor_words: 2.48463e+07
+[3978][      debug]   promoted_words: 2.0341e+06
+[3978][      debug]   major_words: 2.18337e+06
+[3978][      debug]   minor_collections: 31
+[3978][      debug]   major_collections: 5
+[3978][      debug]   compactions: 1
+[3978][      debug]   top_heap_words: 2026496
+[3978][      debug]   
+[3978][environment] Scheduler: file
+[3978][environment] Cores used: 2
+[3978][environment] 
+[4026][environment] CWD = /home/mayar/libpng-1.6.40
+[4026][environment] No .inferconfig file found
+[4026][environment] Project root = /home/mayar/libpng-1.6.40
+[4026][environment] INFER_ARGS =   @/tmp/args.tmp.a08182
+[4026][environment] command line arguments:   gcc -DHAVE_CONFIG_H -I. -g -O2 -MT png.lo -MD -MP
+[4026][environment]                           -MF .deps/png.Tpo -c png.c -fPIC -DPIC -o
+[4026][environment]                           .libs/png.o
+[4026][environment] Available memory at startup: 2555 MB
+[4026][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), dotnet-resource-leak (C#/.Net), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java, C#/.Net)
+[4026][      debug] 
+[4026][      debug] *** Beginning capture of file /home/mayar/libpng-1.6.40/png.c ***
+[4026][      debug] Loading the following linters files: /home/mayar/infer-linux64-v1.1.0/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[4026][      debug] Elapsed: 503ms.
+[4026][      debug] GC stats for capture:
+[4026][      debug]   minor_words: 2.35605e+07
+[4026][      debug]   promoted_words: 1.96108e+06
+[4026][      debug]   major_words: 2.08466e+06
+[4026][      debug]   minor_collections: 28
+[4026][      debug]   major_collections: 2
+[4026][      debug]   compactions: 0
+[4026][      debug]   top_heap_words: 2330624
+[4026][      debug]   
+[4026][      debug] GC stats for main_process_full:
+[4026][      debug]   minor_words: 2.4984e+07
+[4026][      debug]   promoted_words: 2.12667e+06
+[4026][      debug]   major_words: 2.27091e+06
+[4026][      debug]   minor_collections: 32
+[4026][      debug]   major_collections: 4
+[4026][      debug]   compactions: 1
+[4026][      debug]   top_heap_words: 2330624
+[4026][      debug]   
+[4026][environment] Scheduler: file
+[4026][environment] Cores used: 2
+[4026][environment] 
+[4034][environment] CWD = /home/mayar/libpng-1.6.40
+[4034][environment] No .inferconfig file found
+[4034][environment] Project root = /home/mayar/libpng-1.6.40
+[4034][environment] INFER_ARGS =   @/tmp/args.tmp.64c175
+[4034][environment] command line arguments:   gcc -DHAVE_CONFIG_H -I. -g -O2 -MT png.lo -MD -MP
+[4034][environment]                           -MF .deps/png.Tpo -c png.c -o png.o
+[4034][environment] Available memory at startup: 2548 MB
+[4034][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), dotnet-resource-leak (C#/.Net), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java, C#/.Net)
+[4034][      debug] 
+[4034][      debug] *** Beginning capture of file /home/mayar/libpng-1.6.40/png.c ***
+[4034][      debug] Loading the following linters files: /home/mayar/infer-linux64-v1.1.0/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[4034][      debug] Merging capture data for already-captured 'png.c'
+[4034][      debug] Elapsed: 431ms.
+[4034][      debug] GC stats for capture:
+[4034][      debug]   minor_words: 2.35611e+07
+[4034][      debug]   promoted_words: 1.96101e+06
+[4034][      debug]   major_words: 2.09791e+06
+[4034][      debug]   minor_collections: 28
+[4034][      debug]   major_collections: 2
+[4034][      debug]   compactions: 0
+[4034][      debug]   top_heap_words: 2330624
+[4034][      debug]   
+[4034][      debug] GC stats for main_process_full:
+[4034][      debug]   minor_words: 2.4984e+07
+[4034][      debug]   promoted_words: 2.12658e+06
+[4034][      debug]   major_words: 2.28414e+06
+[4034][      debug]   minor_collections: 32
+[4034][      debug]   major_collections: 4
+[4034][      debug]   compactions: 1
+[4034][      debug]   top_heap_words: 2330624
+[4034][      debug]   
+[4034][environment] Scheduler: file
+[4034][environment] Cores used: 2
+[4034][environment] 
+[4080][environment] CWD = /home/mayar/libpng-1.6.40
+[4080][environment] No .inferconfig file found
+[4080][environment] Project root = /home/mayar/libpng-1.6.40
+[4080][environment] INFER_ARGS =   @/tmp/args.tmp.b1fef7
+[4080][environment] command line arguments:   gcc -DHAVE_CONFIG_H -I. -g -O2 -MT pngerror.lo -MD
+[4080][environment]                           -MP -MF .deps/pngerror.Tpo -c pngerror.c -fPIC
+[4080][environment]                           -DPIC -o .libs/pngerror.o
+[4080][environment] Available memory at startup: 2545 MB
+[4080][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), dotnet-resource-leak (C#/.Net), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java, C#/.Net)
+[4080][      debug] 
+[4080][      debug] *** Beginning capture of file /home/mayar/libpng-1.6.40/pngerror.c ***
+[4080][      debug] Loading the following linters files: /home/mayar/infer-linux64-v1.1.0/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[4080][      debug] Elapsed: 131ms.
+[4080][      debug] GC stats for capture:
+[4080][      debug]   minor_words: 7.34929e+06
+[4080][      debug]   promoted_words: 844045
+[4080][      debug]   major_words: 888163
+[4080][      debug]   minor_collections: 8
+[4080][      debug]   major_collections: 1
+[4080][      debug]   compactions: 0
+[4080][      debug]   top_heap_words: 1157632
+[4080][      debug]   
+[4080][      debug] GC stats for main_process_full:
+[4080][      debug]   minor_words: 8.77282e+06
+[4080][      debug]   promoted_words: 1.00964e+06
+[4080][      debug]   major_words: 1.07441e+06
+[4080][      debug]   minor_collections: 12
+[4080][      debug]   major_collections: 3
+[4080][      debug]   compactions: 1
+[4080][      debug]   top_heap_words: 1157632
+[4080][      debug]   
+[4080][environment] Scheduler: file
+[4080][environment] Cores used: 2
+[4080][environment] 
+[4088][environment] CWD = /home/mayar/libpng-1.6.40
+[4088][environment] No .inferconfig file found
+[4088][environment] Project root = /home/mayar/libpng-1.6.40
+[4088][environment] INFER_ARGS =   @/tmp/args.tmp.99ab10
+[4088][environment] command line arguments:   gcc -DHAVE_CONFIG_H -I. -g -O2 -MT pngerror.lo -MD
+[4088][environment]                           -MP -MF .deps/pngerror.Tpo -c pngerror.c -o
+[4088][environment]                           pngerror.o
+[4088][environment] Available memory at startup: 2535 MB
+[4088][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), dotnet-resource-leak (C#/.Net), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java, C#/.Net)
+[4088][      debug] 
+[4088][      debug] *** Beginning capture of file /home/mayar/libpng-1.6.40/pngerror.c ***
+[4088][      debug] Loading the following linters files: /home/mayar/infer-linux64-v1.1.0/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[4088][      debug] Merging capture data for already-captured 'pngerror.c'
+[4088][      debug] Elapsed: 131ms.
+[4088][      debug] GC stats for capture:
+[4088][      debug]   minor_words: 7.34947e+06
+[4088][      debug]   promoted_words: 843948
+[4088][      debug]   major_words: 898862
+[4088][      debug]   minor_collections: 8
+[4088][      debug]   major_collections: 1
+[4088][      debug]   compactions: 0
+[4088][      debug]   top_heap_words: 1157632
+[4088][      debug]   
+[4088][      debug] GC stats for main_process_full:
+[4088][      debug]   minor_words: 8.77239e+06
+[4088][      debug]   promoted_words: 1.00953e+06
+[4088][      debug]   major_words: 1.08509e+06
+[4088][      debug]   minor_collections: 12
+[4088][      debug]   major_collections: 3
+[4088][      debug]   compactions: 1
+[4088][      debug]   top_heap_words: 1157632
+[4088][      debug]   
+[4088][environment] Scheduler: file
+[4088][environment] Cores used: 2
+[4088][environment] 
+[4134][environment] CWD = /home/mayar/libpng-1.6.40
+[4134][environment] No .inferconfig file found
+[4134][environment] Project root = /home/mayar/libpng-1.6.40
+[4134][environment] INFER_ARGS =   @/tmp/args.tmp.1206f0
+[4134][environment] command line arguments:   gcc -DHAVE_CONFIG_H -I. -g -O2 -MT pngget.lo -MD
+[4134][environment]                           -MP -MF .deps/pngget.Tpo -c pngget.c -fPIC -DPIC -o
+[4134][environment]                           .libs/pngget.o
+[4134][environment] Available memory at startup: 2521 MB
+[4134][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), dotnet-resource-leak (C#/.Net), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java, C#/.Net)
+[4134][      debug] 
+[4134][      debug] *** Beginning capture of file /home/mayar/libpng-1.6.40/pngget.c ***
+[4134][      debug] Loading the following linters files: /home/mayar/infer-linux64-v1.1.0/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[4134][      debug] Elapsed: 180ms.
+[4134][      debug] GC stats for capture:
+[4134][      debug]   minor_words: 9.66823e+06
+[4134][      debug]   promoted_words: 1.03052e+06
+[4134][      debug]   major_words: 1.08247e+06
+[4134][      debug]   minor_collections: 11
+[4134][      debug]   major_collections: 2
+[4134][      debug]   compactions: 0
+[4134][      debug]   top_heap_words: 1331712
+[4134][      debug]   
+[4134][      debug] GC stats for main_process_full:
+[4134][      debug]   minor_words: 1.10918e+07
+[4134][      debug]   promoted_words: 1.19611e+06
+[4134][      debug]   major_words: 1.26872e+06
+[4134][      debug]   minor_collections: 15
+[4134][      debug]   major_collections: 4
+[4134][      debug]   compactions: 1
+[4134][      debug]   top_heap_words: 1331712
+[4134][      debug]   
+[4134][environment] Scheduler: file
+[4134][environment] Cores used: 2
+[4134][environment] 
+[4142][environment] CWD = /home/mayar/libpng-1.6.40
+[4142][environment] No .inferconfig file found
+[4142][environment] Project root = /home/mayar/libpng-1.6.40
+[4142][environment] INFER_ARGS =   @/tmp/args.tmp.485b54
+[4142][environment] command line arguments:   gcc -DHAVE_CONFIG_H -I. -g -O2 -MT pngget.lo -MD
+[4142][environment]                           -MP -MF .deps/pngget.Tpo -c pngget.c -o pngget.o
+[4142][environment] Available memory at startup: 2546 MB
+[4142][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), dotnet-resource-leak (C#/.Net), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java, C#/.Net)
+[4142][      debug] 
+[4142][      debug] *** Beginning capture of file /home/mayar/libpng-1.6.40/pngget.c ***
+[4142][      debug] Loading the following linters files: /home/mayar/infer-linux64-v1.1.0/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[4142][      debug] Merging capture data for already-captured 'pngget.c'
+[4142][      debug] Elapsed: 158ms.
+[4142][      debug] GC stats for capture:
+[4142][      debug]   minor_words: 9.66893e+06
+[4142][      debug]   promoted_words: 1.03045e+06
+[4142][      debug]   major_words: 1.09247e+06
+[4142][      debug]   minor_collections: 11
+[4142][      debug]   major_collections: 2
+[4142][      debug]   compactions: 0
+[4142][      debug]   top_heap_words: 1331712
+[4142][      debug]   
+[4142][      debug] GC stats for main_process_full:
+[4142][      debug]   minor_words: 1.10918e+07
+[4142][      debug]   promoted_words: 1.19603e+06
+[4142][      debug]   major_words: 1.2787e+06
+[4142][      debug]   minor_collections: 15
+[4142][      debug]   major_collections: 4
+[4142][      debug]   compactions: 1
+[4142][      debug]   top_heap_words: 1331712
+[4142][      debug]   
+[4142][environment] Scheduler: file
+[4142][environment] Cores used: 2
+[4142][environment] 
+[4188][environment] CWD = /home/mayar/libpng-1.6.40
+[4188][environment] No .inferconfig file found
+[4188][environment] Project root = /home/mayar/libpng-1.6.40
+[4188][environment] INFER_ARGS =   @/tmp/args.tmp.e9275f
+[4188][environment] command line arguments:   gcc -DHAVE_CONFIG_H -I. -g -O2 -MT pngmem.lo -MD
+[4188][environment]                           -MP -MF .deps/pngmem.Tpo -c pngmem.c -fPIC -DPIC -o
+[4188][environment]                           .libs/pngmem.o
+[4188][environment] Available memory at startup: 2545 MB
+[4188][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), dotnet-resource-leak (C#/.Net), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java, C#/.Net)
+[4188][      debug] 
+[4188][      debug] *** Beginning capture of file /home/mayar/libpng-1.6.40/pngmem.c ***
+[4188][      debug] Loading the following linters files: /home/mayar/infer-linux64-v1.1.0/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[4188][      debug] Elapsed: 89.911ms.
+[4188][      debug] GC stats for capture:
+[4188][      debug]   minor_words: 5.47197e+06
+[4188][      debug]   promoted_words: 726938
+[4188][      debug]   major_words: 764307
+[4188][      debug]   minor_collections: 7
+[4188][      debug]   major_collections: 1
+[4188][      debug]   compactions: 0
+[4188][      debug]   top_heap_words: 1006592
+[4188][      debug]   
+[4188][      debug] GC stats for main_process_full:
+[4188][      debug]   minor_words: 6.8955e+06
+[4188][      debug]   promoted_words: 892533
+[4188][      debug]   major_words: 950554
+[4188][      debug]   minor_collections: 11
+[4188][      debug]   major_collections: 3
+[4188][      debug]   compactions: 1
+[4188][      debug]   top_heap_words: 1006592
+[4188][      debug]   
+[4188][environment] Scheduler: file
+[4188][environment] Cores used: 2
+[4188][environment] 
+[4196][environment] CWD = /home/mayar/libpng-1.6.40
+[4196][environment] No .inferconfig file found
+[4196][environment] Project root = /home/mayar/libpng-1.6.40
+[4196][environment] INFER_ARGS =   @/tmp/args.tmp.e81d9d
+[4196][environment] command line arguments:   gcc -DHAVE_CONFIG_H -I. -g -O2 -MT pngmem.lo -MD
+[4196][environment]                           -MP -MF .deps/pngmem.Tpo -c pngmem.c -o pngmem.o
+[4196][environment] Available memory at startup: 2539 MB
+[4196][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), dotnet-resource-leak (C#/.Net), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java, C#/.Net)
+[4196][      debug] 
+[4196][      debug] *** Beginning capture of file /home/mayar/libpng-1.6.40/pngmem.c ***
+[4196][      debug] Loading the following linters files: /home/mayar/infer-linux64-v1.1.0/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[4196][      debug] Merging capture data for already-captured 'pngmem.c'
+[4196][      debug] Elapsed: 94.193ms.
+[4196][      debug] GC stats for capture:
+[4196][      debug]   minor_words: 5.47216e+06
+[4196][      debug]   promoted_words: 726867
+[4196][      debug]   major_words: 771116
+[4196][      debug]   minor_collections: 7
+[4196][      debug]   major_collections: 1
+[4196][      debug]   compactions: 0
+[4196][      debug]   top_heap_words: 1006592
+[4196][      debug]   
+[4196][      debug] GC stats for main_process_full:
+[4196][      debug]   minor_words: 6.89508e+06
+[4196][      debug]   promoted_words: 892446
+[4196][      debug]   major_words: 957347
+[4196][      debug]   minor_collections: 11
+[4196][      debug]   major_collections: 3
+[4196][      debug]   compactions: 1
+[4196][      debug]   top_heap_words: 1006592
+[4196][      debug]   
+[4196][environment] Scheduler: file
+[4196][environment] Cores used: 2
+[4196][environment] 
+[4242][environment] CWD = /home/mayar/libpng-1.6.40
+[4242][environment] No .inferconfig file found
+[4242][environment] Project root = /home/mayar/libpng-1.6.40
+[4242][environment] INFER_ARGS =   @/tmp/args.tmp.8f0203
+[4242][environment] command line arguments:   gcc -DHAVE_CONFIG_H -I. -g -O2 -MT pngpread.lo -MD
+[4242][environment]                           -MP -MF .deps/pngpread.Tpo -c pngpread.c -fPIC
+[4242][environment]                           -DPIC -o .libs/pngpread.o
+[4242][environment] Available memory at startup: 2545 MB
+[4242][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), dotnet-resource-leak (C#/.Net), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java, C#/.Net)
+[4242][      debug] 
+[4242][      debug] *** Beginning capture of file /home/mayar/libpng-1.6.40/pngpread.c ***
+[4242][      debug] Loading the following linters files: /home/mayar/infer-linux64-v1.1.0/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[4242][      debug] Elapsed: 148ms.
+[4242][      debug] GC stats for capture:
+[4242][      debug]   minor_words: 1.10923e+07
+[4242][      debug]   promoted_words: 1.11591e+06
+[4242][      debug]   major_words: 1.18404e+06
+[4242][      debug]   minor_collections: 12
+[4242][      debug]   major_collections: 2
+[4242][      debug]   compactions: 0
+[4242][      debug]   top_heap_words: 1331712
+[4242][      debug]   
+[4242][      debug] GC stats for main_process_full:
+[4242][      debug]   minor_words: 1.25159e+07
+[4242][      debug]   promoted_words: 1.2815e+06
+[4242][      debug]   major_words: 1.37028e+06
+[4242][      debug]   minor_collections: 16
+[4242][      debug]   major_collections: 4
+[4242][      debug]   compactions: 1
+[4242][      debug]   top_heap_words: 1331712
+[4242][      debug]   
+[4242][environment] Scheduler: file
+[4242][environment] Cores used: 2
+[4242][environment] 
+[4250][environment] CWD = /home/mayar/libpng-1.6.40
+[4250][environment] No .inferconfig file found
+[4250][environment] Project root = /home/mayar/libpng-1.6.40
+[4250][environment] INFER_ARGS =   @/tmp/args.tmp.fd38f4
+[4250][environment] command line arguments:   gcc -DHAVE_CONFIG_H -I. -g -O2 -MT pngpread.lo -MD
+[4250][environment]                           -MP -MF .deps/pngpread.Tpo -c pngpread.c -o
+[4250][environment]                           pngpread.o
+[4250][environment] Available memory at startup: 2533 MB
+[4250][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), dotnet-resource-leak (C#/.Net), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java, C#/.Net)
+[4250][      debug] 
+[4250][      debug] *** Beginning capture of file /home/mayar/libpng-1.6.40/pngpread.c ***
+[4250][      debug] Loading the following linters files: /home/mayar/infer-linux64-v1.1.0/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[4250][      debug] Merging capture data for already-captured 'pngpread.c'
+[4250][      debug] Elapsed: 151ms.
+[4250][      debug] GC stats for capture:
+[4250][      debug]   minor_words: 1.10924e+07
+[4250][      debug]   promoted_words: 1.11594e+06
+[4250][      debug]   major_words: 1.19347e+06
+[4250][      debug]   minor_collections: 12
+[4250][      debug]   major_collections: 2
+[4250][      debug]   compactions: 0
+[4250][      debug]   top_heap_words: 1331712
+[4250][      debug]   
+[4250][      debug] GC stats for main_process_full:
+[4250][      debug]   minor_words: 1.25153e+07
+[4250][      debug]   promoted_words: 1.28152e+06
+[4250][      debug]   major_words: 1.3797e+06
+[4250][      debug]   minor_collections: 16
+[4250][      debug]   major_collections: 4
+[4250][      debug]   compactions: 1
+[4250][      debug]   top_heap_words: 1331712
+[4250][      debug]   
+[4250][environment] Scheduler: file
+[4250][environment] Cores used: 2
+[4250][environment] 
+[4296][environment] CWD = /home/mayar/libpng-1.6.40
+[4296][environment] No .inferconfig file found
+[4296][environment] Project root = /home/mayar/libpng-1.6.40
+[4296][environment] INFER_ARGS =   @/tmp/args.tmp.2342f2
+[4296][environment] command line arguments:   gcc -DHAVE_CONFIG_H -I. -g -O2 -MT pngread.lo -MD
+[4296][environment]                           -MP -MF .deps/pngread.Tpo -c pngread.c -fPIC -DPIC
+[4296][environment]                           -o .libs/pngread.o
+[4296][environment] Available memory at startup: 2520 MB
+[4296][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), dotnet-resource-leak (C#/.Net), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java, C#/.Net)
+[4296][      debug] 
+[4296][      debug] *** Beginning capture of file /home/mayar/libpng-1.6.40/pngread.c ***
+[4296][      debug] Loading the following linters files: /home/mayar/infer-linux64-v1.1.0/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[4296][      debug] Elapsed: 348ms.
+[4296][      debug] GC stats for capture:
+[4296][      debug]   minor_words: 2.30524e+07
+[4296][      debug]   promoted_words: 1.99502e+06
+[4296][      debug]   major_words: 2.12302e+06
+[4296][      debug]   minor_collections: 24
+[4296][      debug]   major_collections: 2
+[4296][      debug]   compactions: 0
+[4296][      debug]   top_heap_words: 2330624
+[4296][      debug]   
+[4296][      debug] GC stats for main_process_full:
+[4296][      debug]   minor_words: 2.44759e+07
+[4296][      debug]   promoted_words: 2.16062e+06
+[4296][      debug]   major_words: 2.30926e+06
+[4296][      debug]   minor_collections: 28
+[4296][      debug]   major_collections: 4
+[4296][      debug]   compactions: 1
+[4296][      debug]   top_heap_words: 2330624
+[4296][      debug]   
+[4296][environment] Scheduler: file
+[4296][environment] Cores used: 2
+[4296][environment] 
+[4304][environment] CWD = /home/mayar/libpng-1.6.40
+[4304][environment] No .inferconfig file found
+[4304][environment] Project root = /home/mayar/libpng-1.6.40
+[4304][environment] INFER_ARGS =   @/tmp/args.tmp.d73888
+[4304][environment] command line arguments:   gcc -DHAVE_CONFIG_H -I. -g -O2 -MT pngread.lo -MD
+[4304][environment]                           -MP -MF .deps/pngread.Tpo -c pngread.c -o pngread.o
+[4304][environment] Available memory at startup: 2544 MB
+[4304][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), dotnet-resource-leak (C#/.Net), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java, C#/.Net)
+[4304][      debug] 
+[4304][      debug] *** Beginning capture of file /home/mayar/libpng-1.6.40/pngread.c ***
+[4304][      debug] Loading the following linters files: /home/mayar/infer-linux64-v1.1.0/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[4304][      debug] Merging capture data for already-captured 'pngread.c'
+[4304][      debug] Elapsed: 302ms.
+[4304][      debug] GC stats for capture:
+[4304][      debug]   minor_words: 2.30526e+07
+[4304][      debug]   promoted_words: 1.99441e+06
+[4304][      debug]   major_words: 2.13441e+06
+[4304][      debug]   minor_collections: 24
+[4304][      debug]   major_collections: 2
+[4304][      debug]   compactions: 0
+[4304][      debug]   top_heap_words: 2330624
+[4304][      debug]   
+[4304][      debug] GC stats for main_process_full:
+[4304][      debug]   minor_words: 2.44755e+07
+[4304][      debug]   promoted_words: 2.15999e+06
+[4304][      debug]   major_words: 2.32064e+06
+[4304][      debug]   minor_collections: 28
+[4304][      debug]   major_collections: 4
+[4304][      debug]   compactions: 1
+[4304][      debug]   top_heap_words: 2330624
+[4304][      debug]   
+[4304][environment] Scheduler: file
+[4304][environment] Cores used: 2
+[4304][environment] 
+[4350][environment] CWD = /home/mayar/libpng-1.6.40
+[4350][environment] No .inferconfig file found
+[4350][environment] Project root = /home/mayar/libpng-1.6.40
+[4350][environment] INFER_ARGS =   @/tmp/args.tmp.f8003c
+[4350][environment] command line arguments:   gcc -DHAVE_CONFIG_H -I. -g -O2 -MT pngrio.lo -MD
+[4350][environment]                           -MP -MF .deps/pngrio.Tpo -c pngrio.c -fPIC -DPIC -o
+[4350][environment]                           .libs/pngrio.o
+[4350][environment] Available memory at startup: 2543 MB
+[4350][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), dotnet-resource-leak (C#/.Net), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java, C#/.Net)
+[4350][      debug] 
+[4350][      debug] *** Beginning capture of file /home/mayar/libpng-1.6.40/pngrio.c ***
+[4350][      debug] Loading the following linters files: /home/mayar/infer-linux64-v1.1.0/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[4350][      debug] Elapsed: 83.616ms.
+[4350][      debug] GC stats for capture:
+[4350][      debug]   minor_words: 4.85059e+06
+[4350][      debug]   promoted_words: 666308
+[4350][      debug]   major_words: 699522
+[4350][      debug]   minor_collections: 6
+[4350][      debug]   major_collections: 1
+[4350][      debug]   compactions: 0
+[4350][      debug]   top_heap_words: 875008
+[4350][      debug]   
+[4350][      debug] GC stats for main_process_full:
+[4350][      debug]   minor_words: 6.27412e+06
+[4350][      debug]   promoted_words: 831903
+[4350][      debug]   major_words: 885769
+[4350][      debug]   minor_collections: 10
+[4350][      debug]   major_collections: 3
+[4350][      debug]   compactions: 1
+[4350][      debug]   top_heap_words: 875008
+[4350][      debug]   
+[4350][environment] Scheduler: file
+[4350][environment] Cores used: 2
+[4350][environment] 
+[4358][environment] CWD = /home/mayar/libpng-1.6.40
+[4358][environment] No .inferconfig file found
+[4358][environment] Project root = /home/mayar/libpng-1.6.40
+[4358][environment] INFER_ARGS =   @/tmp/args.tmp.d9b91a
+[4358][environment] command line arguments:   gcc -DHAVE_CONFIG_H -I. -g -O2 -MT pngrio.lo -MD
+[4358][environment]                           -MP -MF .deps/pngrio.Tpo -c pngrio.c -o pngrio.o
+[4358][environment] Available memory at startup: 2543 MB
+[4358][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), dotnet-resource-leak (C#/.Net), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java, C#/.Net)
+[4358][      debug] 
+[4358][      debug] *** Beginning capture of file /home/mayar/libpng-1.6.40/pngrio.c ***
+[4358][      debug] Loading the following linters files: /home/mayar/infer-linux64-v1.1.0/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[4358][      debug] Merging capture data for already-captured 'pngrio.c'
+[4358][      debug] Elapsed: 76.083ms.
+[4358][      debug] GC stats for capture:
+[4358][      debug]   minor_words: 4.85048e+06
+[4358][      debug]   promoted_words: 686324
+[4358][      debug]   major_words: 727283
+[4358][      debug]   minor_collections: 6
+[4358][      debug]   major_collections: 0
+[4358][      debug]   compactions: 0
+[4358][      debug]   top_heap_words: 1006592
+[4358][      debug]   
+[4358][      debug] GC stats for main_process_full:
+[4358][      debug]   minor_words: 6.2734e+06
+[4358][      debug]   promoted_words: 851903
+[4358][      debug]   major_words: 913514
+[4358][      debug]   minor_collections: 10
+[4358][      debug]   major_collections: 2
+[4358][      debug]   compactions: 1
+[4358][      debug]   top_heap_words: 1006592
+[4358][      debug]   
+[4358][environment] Scheduler: file
+[4358][environment] Cores used: 2
+[4358][environment] 
+[4404][environment] CWD = /home/mayar/libpng-1.6.40
+[4404][environment] No .inferconfig file found
+[4404][environment] Project root = /home/mayar/libpng-1.6.40
+[4404][environment] INFER_ARGS =   @/tmp/args.tmp.84452f
+[4404][environment] command line arguments:   gcc -DHAVE_CONFIG_H -I. -g -O2 -MT pngrtran.lo -MD
+[4404][environment]                           -MP -MF .deps/pngrtran.Tpo -c pngrtran.c -fPIC
+[4404][environment]                           -DPIC -o .libs/pngrtran.o
+[4404][environment] Available memory at startup: 2542 MB
+[4404][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), dotnet-resource-leak (C#/.Net), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java, C#/.Net)
+[4404][      debug] 
+[4404][      debug] *** Beginning capture of file /home/mayar/libpng-1.6.40/pngrtran.c ***
+[4404][      debug] Loading the following linters files: /home/mayar/infer-linux64-v1.1.0/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[4404][      debug] Elapsed: 445ms.
+[4404][      debug] GC stats for capture:
+[4404][      debug]   minor_words: 2.89043e+07
+[4404][      debug]   promoted_words: 2.60105e+06
+[4404][      debug]   major_words: 2.78769e+06
+[4404][      debug]   minor_collections: 29
+[4404][      debug]   major_collections: 2
+[4404][      debug]   compactions: 0
+[4404][      debug]   top_heap_words: 3082752
+[4404][      debug]   
+[4404][      debug] GC stats for main_process_full:
+[4404][      debug]   minor_words: 3.03278e+07
+[4404][      debug]   promoted_words: 2.76664e+06
+[4404][      debug]   major_words: 2.97394e+06
+[4404][      debug]   minor_collections: 33
+[4404][      debug]   major_collections: 4
+[4404][      debug]   compactions: 1
+[4404][      debug]   top_heap_words: 3082752
+[4404][      debug]   
+[4404][environment] Scheduler: file
+[4404][environment] Cores used: 2
+[4404][environment] 
+[4412][environment] CWD = /home/mayar/libpng-1.6.40
+[4412][environment] No .inferconfig file found
+[4412][environment] Project root = /home/mayar/libpng-1.6.40
+[4412][environment] INFER_ARGS =   @/tmp/args.tmp.6b1912
+[4412][environment] command line arguments:   gcc -DHAVE_CONFIG_H -I. -g -O2 -MT pngrtran.lo -MD
+[4412][environment]                           -MP -MF .deps/pngrtran.Tpo -c pngrtran.c -o
+[4412][environment]                           pngrtran.o
+[4412][environment] Available memory at startup: 2524 MB
+[4412][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), dotnet-resource-leak (C#/.Net), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java, C#/.Net)
+[4412][      debug] 
+[4412][      debug] *** Beginning capture of file /home/mayar/libpng-1.6.40/pngrtran.c ***
+[4412][      debug] Loading the following linters files: /home/mayar/infer-linux64-v1.1.0/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[4412][      debug] Merging capture data for already-captured 'pngrtran.c'
+[4412][      debug] Elapsed: 351ms.
+[4412][      debug] GC stats for capture:
+[4412][      debug]   minor_words: 2.89045e+07
+[4412][      debug]   promoted_words: 2.60097e+06
+[4412][      debug]   major_words: 2.79832e+06
+[4412][      debug]   minor_collections: 29
+[4412][      debug]   major_collections: 2
+[4412][      debug]   compactions: 0
+[4412][      debug]   top_heap_words: 3082752
+[4412][      debug]   
+[4412][      debug] GC stats for main_process_full:
+[4412][      debug]   minor_words: 3.03274e+07
+[4412][      debug]   promoted_words: 2.76655e+06
+[4412][      debug]   major_words: 2.98455e+06
+[4412][      debug]   minor_collections: 33
+[4412][      debug]   major_collections: 4
+[4412][      debug]   compactions: 1
+[4412][      debug]   top_heap_words: 3082752
+[4412][      debug]   
+[4412][environment] Scheduler: file
+[4412][environment] Cores used: 2
+[4412][environment] 
+[4458][environment] CWD = /home/mayar/libpng-1.6.40
+[4458][environment] No .inferconfig file found
+[4458][environment] Project root = /home/mayar/libpng-1.6.40
+[4458][environment] INFER_ARGS =   @/tmp/args.tmp.e4b164
+[4458][environment] command line arguments:   gcc -DHAVE_CONFIG_H -I. -g -O2 -MT pngrutil.lo -MD
+[4458][environment]                           -MP -MF .deps/pngrutil.Tpo -c pngrutil.c -fPIC
+[4458][environment]                           -DPIC -o .libs/pngrutil.o
+[4458][environment] Available memory at startup: 2539 MB
+[4458][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), dotnet-resource-leak (C#/.Net), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java, C#/.Net)
+[4458][      debug] 
+[4458][      debug] *** Beginning capture of file /home/mayar/libpng-1.6.40/pngrutil.c ***
+[4458][      debug] Loading the following linters files: /home/mayar/infer-linux64-v1.1.0/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[4458][      debug] Elapsed: 959ms.
+[4458][      debug] GC stats for capture:
+[4458][      debug]   minor_words: 6.64535e+07
+[4458][      debug]   promoted_words: 6.8154e+06
+[4458][      debug]   major_words: 7.1487e+06
+[4458][      debug]   minor_collections: 67
+[4458][      debug]   major_collections: 4
+[4458][      debug]   compactions: 0
+[4458][      debug]   top_heap_words: 7132160
+[4458][      debug]   
+[4458][      debug] GC stats for main_process_full:
+[4458][      debug]   minor_words: 6.7877e+07
+[4458][      debug]   promoted_words: 6.981e+06
+[4458][      debug]   major_words: 7.33494e+06
+[4458][      debug]   minor_collections: 71
+[4458][      debug]   major_collections: 6
+[4458][      debug]   compactions: 1
+[4458][      debug]   top_heap_words: 7132160
+[4458][      debug]   
+[4458][environment] Scheduler: file
+[4458][environment] Cores used: 2
+[4458][environment] 
+[4466][environment] CWD = /home/mayar/libpng-1.6.40
+[4466][environment] No .inferconfig file found
+[4466][environment] Project root = /home/mayar/libpng-1.6.40
+[4466][environment] INFER_ARGS =   @/tmp/args.tmp.9dde5e
+[4466][environment] command line arguments:   gcc -DHAVE_CONFIG_H -I. -g -O2 -MT pngrutil.lo -MD
+[4466][environment]                           -MP -MF .deps/pngrutil.Tpo -c pngrutil.c -o
+[4466][environment]                           pngrutil.o
+[4466][environment] Available memory at startup: 2539 MB
+[4466][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), dotnet-resource-leak (C#/.Net), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java, C#/.Net)
+[4466][      debug] 
+[4466][      debug] *** Beginning capture of file /home/mayar/libpng-1.6.40/pngrutil.c ***
+[4466][      debug] Loading the following linters files: /home/mayar/infer-linux64-v1.1.0/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[4466][      debug] Merging capture data for already-captured 'pngrutil.c'
+[4466][      debug] Elapsed: 694ms.
+[4466][      debug] GC stats for capture:
+[4466][      debug]   minor_words: 6.64537e+07
+[4466][      debug]   promoted_words: 6.81533e+06
+[4466][      debug]   major_words: 7.15913e+06
+[4466][      debug]   minor_collections: 67
+[4466][      debug]   major_collections: 4
+[4466][      debug]   compactions: 0
+[4466][      debug]   top_heap_words: 7132160
+[4466][      debug]   
+[4466][      debug] GC stats for main_process_full:
+[4466][      debug]   minor_words: 6.78767e+07
+[4466][      debug]   promoted_words: 6.98091e+06
+[4466][      debug]   major_words: 7.34536e+06
+[4466][      debug]   minor_collections: 71
+[4466][      debug]   major_collections: 6
+[4466][      debug]   compactions: 1
+[4466][      debug]   top_heap_words: 7132160
+[4466][      debug]   
+[4466][environment] Scheduler: file
+[4466][environment] Cores used: 2
+[4466][environment] 
+[4512][environment] CWD = /home/mayar/libpng-1.6.40
+[4512][environment] No .inferconfig file found
+[4512][environment] Project root = /home/mayar/libpng-1.6.40
+[4512][environment] INFER_ARGS =   @/tmp/args.tmp.f310bf
+[4512][environment] command line arguments:   gcc -DHAVE_CONFIG_H -I. -g -O2 -MT pngset.lo -MD
+[4512][environment]                           -MP -MF .deps/pngset.Tpo -c pngset.c -fPIC -DPIC -o
+[4512][environment]                           .libs/pngset.o
+[4512][environment] Available memory at startup: 2519 MB
+[4512][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), dotnet-resource-leak (C#/.Net), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java, C#/.Net)
+[4512][      debug] 
+[4512][      debug] *** Beginning capture of file /home/mayar/libpng-1.6.40/pngset.c ***
+[4512][      debug] Loading the following linters files: /home/mayar/infer-linux64-v1.1.0/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[4512][      debug] Elapsed: 194ms.
+[4512][      debug] GC stats for capture:
+[4512][      debug]   minor_words: 1.22413e+07
+[4512][      debug]   promoted_words: 1.20798e+06
+[4512][      debug]   major_words: 1.28031e+06
+[4512][      debug]   minor_collections: 13
+[4512][      debug]   major_collections: 2
+[4512][      debug]   compactions: 0
+[4512][      debug]   top_heap_words: 1531904
+[4512][      debug]   
+[4512][      debug] GC stats for main_process_full:
+[4512][      debug]   minor_words: 1.36648e+07
+[4512][      debug]   promoted_words: 1.37358e+06
+[4512][      debug]   major_words: 1.46656e+06
+[4512][      debug]   minor_collections: 17
+[4512][      debug]   major_collections: 4
+[4512][      debug]   compactions: 1
+[4512][      debug]   top_heap_words: 1531904
+[4512][      debug]   
+[4512][environment] Scheduler: file
+[4512][environment] Cores used: 2
+[4512][environment] 
+[4520][environment] CWD = /home/mayar/libpng-1.6.40
+[4520][environment] No .inferconfig file found
+[4520][environment] Project root = /home/mayar/libpng-1.6.40
+[4520][environment] INFER_ARGS =   @/tmp/args.tmp.c0c975
+[4520][environment] command line arguments:   gcc -DHAVE_CONFIG_H -I. -g -O2 -MT pngset.lo -MD
+[4520][environment]                           -MP -MF .deps/pngset.Tpo -c pngset.c -o pngset.o
+[4520][environment] Available memory at startup: 2538 MB
+[4520][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), dotnet-resource-leak (C#/.Net), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java, C#/.Net)
+[4520][      debug] 
+[4520][      debug] *** Beginning capture of file /home/mayar/libpng-1.6.40/pngset.c ***
+[4520][      debug] Loading the following linters files: /home/mayar/infer-linux64-v1.1.0/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[4520][      debug] Merging capture data for already-captured 'pngset.c'
+[4520][      debug] Elapsed: 168ms.
+[4520][      debug] GC stats for capture:
+[4520][      debug]   minor_words: 1.22417e+07
+[4520][      debug]   promoted_words: 1.20739e+06
+[4520][      debug]   major_words: 1.28938e+06
+[4520][      debug]   minor_collections: 13
+[4520][      debug]   major_collections: 2
+[4520][      debug]   compactions: 0
+[4520][      debug]   top_heap_words: 1531904
+[4520][      debug]   
+[4520][      debug] GC stats for main_process_full:
+[4520][      debug]   minor_words: 1.36646e+07
+[4520][      debug]   promoted_words: 1.37297e+06
+[4520][      debug]   major_words: 1.47561e+06
+[4520][      debug]   minor_collections: 17
+[4520][      debug]   major_collections: 4
+[4520][      debug]   compactions: 1
+[4520][      debug]   top_heap_words: 1531904
+[4520][      debug]   
+[4520][environment] Scheduler: file
+[4520][environment] Cores used: 2
+[4520][environment] 
+[4566][environment] CWD = /home/mayar/libpng-1.6.40
+[4566][environment] No .inferconfig file found
+[4566][environment] Project root = /home/mayar/libpng-1.6.40
+[4566][environment] INFER_ARGS =   @/tmp/args.tmp.5e472f
+[4566][environment] command line arguments:   gcc -DHAVE_CONFIG_H -I. -g -O2 -MT pngtrans.lo -MD
+[4566][environment]                           -MP -MF .deps/pngtrans.Tpo -c pngtrans.c -fPIC
+[4566][environment]                           -DPIC -o .libs/pngtrans.o
+[4566][environment] Available memory at startup: 2526 MB
+[4566][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), dotnet-resource-leak (C#/.Net), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java, C#/.Net)
+[4566][      debug] 
+[4566][      debug] *** Beginning capture of file /home/mayar/libpng-1.6.40/pngtrans.c ***
+[4566][      debug] Loading the following linters files: /home/mayar/infer-linux64-v1.1.0/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[4566][      debug] Elapsed: 118ms.
+[4566][      debug] GC stats for capture:
+[4566][      debug]   minor_words: 8.64544e+06
+[4566][      debug]   promoted_words: 975450
+[4566][      debug]   major_words: 1.02958e+06
+[4566][      debug]   minor_collections: 11
+[4566][      debug]   major_collections: 1
+[4566][      debug]   compactions: 0
+[4566][      debug]   top_heap_words: 1331712
+[4566][      debug]   
+[4566][      debug] GC stats for main_process_full:
+[4566][      debug]   minor_words: 1.0069e+07
+[4566][      debug]   promoted_words: 1.14105e+06
+[4566][      debug]   major_words: 1.21582e+06
+[4566][      debug]   minor_collections: 15
+[4566][      debug]   major_collections: 3
+[4566][      debug]   compactions: 1
+[4566][      debug]   top_heap_words: 1331712
+[4566][      debug]   
+[4566][environment] Scheduler: file
+[4566][environment] Cores used: 2
+[4566][environment] 
+[4574][environment] CWD = /home/mayar/libpng-1.6.40
+[4574][environment] No .inferconfig file found
+[4574][environment] Project root = /home/mayar/libpng-1.6.40
+[4574][environment] INFER_ARGS =   @/tmp/args.tmp.274206
+[4574][environment] command line arguments:   gcc -DHAVE_CONFIG_H -I. -g -O2 -MT pngtrans.lo -MD
+[4574][environment]                           -MP -MF .deps/pngtrans.Tpo -c pngtrans.c -o
+[4574][environment]                           pngtrans.o
+[4574][environment] Available memory at startup: 2516 MB
+[4574][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), dotnet-resource-leak (C#/.Net), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java, C#/.Net)
+[4574][      debug] 
+[4574][      debug] *** Beginning capture of file /home/mayar/libpng-1.6.40/pngtrans.c ***
+[4574][      debug] Loading the following linters files: /home/mayar/infer-linux64-v1.1.0/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[4574][      debug] Merging capture data for already-captured 'pngtrans.c'
+[4574][      debug] Elapsed: 119ms.
+[4574][      debug] GC stats for capture:
+[4574][      debug]   minor_words: 8.64556e+06
+[4574][      debug]   promoted_words: 975378
+[4574][      debug]   major_words: 1.037e+06
+[4574][      debug]   minor_collections: 11
+[4574][      debug]   major_collections: 1
+[4574][      debug]   compactions: 0
+[4574][      debug]   top_heap_words: 1331712
+[4574][      debug]   
+[4574][      debug] GC stats for main_process_full:
+[4574][      debug]   minor_words: 1.00685e+07
+[4574][      debug]   promoted_words: 1.14096e+06
+[4574][      debug]   major_words: 1.22323e+06
+[4574][      debug]   minor_collections: 15
+[4574][      debug]   major_collections: 3
+[4574][      debug]   compactions: 1
+[4574][      debug]   top_heap_words: 1331712
+[4574][      debug]   
+[4574][environment] Scheduler: file
+[4574][environment] Cores used: 2
+[4574][environment] 
+[4620][environment] CWD = /home/mayar/libpng-1.6.40
+[4620][environment] No .inferconfig file found
+[4620][environment] Project root = /home/mayar/libpng-1.6.40
+[4620][environment] INFER_ARGS =   @/tmp/args.tmp.a12d8b
+[4620][environment] command line arguments:   gcc -DHAVE_CONFIG_H -I. -g -O2 -MT pngwio.lo -MD
+[4620][environment]                           -MP -MF .deps/pngwio.Tpo -c pngwio.c -fPIC -DPIC -o
+[4620][environment]                           .libs/pngwio.o
+[4620][environment] Available memory at startup: 2537 MB
+[4620][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), dotnet-resource-leak (C#/.Net), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java, C#/.Net)
+[4620][      debug] 
+[4620][      debug] *** Beginning capture of file /home/mayar/libpng-1.6.40/pngwio.c ***
+[4620][      debug] Loading the following linters files: /home/mayar/infer-linux64-v1.1.0/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[4620][      debug] Elapsed: 78.957ms.
+[4620][      debug] GC stats for capture:
+[4620][      debug]   minor_words: 4.94366e+06
+[4620][      debug]   promoted_words: 690272
+[4620][      debug]   major_words: 723578
+[4620][      debug]   minor_collections: 6
+[4620][      debug]   major_collections: 0
+[4620][      debug]   compactions: 0
+[4620][      debug]   top_heap_words: 1006592
+[4620][      debug]   
+[4620][      debug] GC stats for main_process_full:
+[4620][      debug]   minor_words: 6.36719e+06
+[4620][      debug]   promoted_words: 855867
+[4620][      debug]   major_words: 909825
+[4620][      debug]   minor_collections: 10
+[4620][      debug]   major_collections: 2
+[4620][      debug]   compactions: 1
+[4620][      debug]   top_heap_words: 1006592
+[4620][      debug]   
+[4620][environment] Scheduler: file
+[4620][environment] Cores used: 2
+[4620][environment] 
+[4628][environment] CWD = /home/mayar/libpng-1.6.40
+[4628][environment] No .inferconfig file found
+[4628][environment] Project root = /home/mayar/libpng-1.6.40
+[4628][environment] INFER_ARGS =   @/tmp/args.tmp.68d2e9
+[4628][environment] command line arguments:   gcc -DHAVE_CONFIG_H -I. -g -O2 -MT pngwio.lo -MD
+[4628][environment]                           -MP -MF .deps/pngwio.Tpo -c pngwio.c -o pngwio.o
+[4628][environment] Available memory at startup: 2528 MB
+[4628][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), dotnet-resource-leak (C#/.Net), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java, C#/.Net)
+[4628][      debug] 
+[4628][      debug] *** Beginning capture of file /home/mayar/libpng-1.6.40/pngwio.c ***
+[4628][      debug] Loading the following linters files: /home/mayar/infer-linux64-v1.1.0/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[4628][      debug] Merging capture data for already-captured 'pngwio.c'
+[4628][      debug] Elapsed: 79.706ms.
+[4628][      debug] GC stats for capture:
+[4628][      debug]   minor_words: 4.94361e+06
+[4628][      debug]   promoted_words: 690201
+[4628][      debug]   major_words: 731252
+[4628][      debug]   minor_collections: 6
+[4628][      debug]   major_collections: 0
+[4628][      debug]   compactions: 0
+[4628][      debug]   top_heap_words: 1006592
+[4628][      debug]   
+[4628][      debug] GC stats for main_process_full:
+[4628][      debug]   minor_words: 6.36653e+06
+[4628][      debug]   promoted_words: 855780
+[4628][      debug]   major_words: 917483
+[4628][      debug]   minor_collections: 10
+[4628][      debug]   major_collections: 2
+[4628][      debug]   compactions: 1
+[4628][      debug]   top_heap_words: 1006592
+[4628][      debug]   
+[4628][environment] Scheduler: file
+[4628][environment] Cores used: 2
+[4628][environment] 
+[4674][environment] CWD = /home/mayar/libpng-1.6.40
+[4674][environment] No .inferconfig file found
+[4674][environment] Project root = /home/mayar/libpng-1.6.40
+[4674][environment] INFER_ARGS =   @/tmp/args.tmp.97a138
+[4674][environment] command line arguments:   gcc -DHAVE_CONFIG_H -I. -g -O2 -MT pngwrite.lo -MD
+[4674][environment]                           -MP -MF .deps/pngwrite.Tpo -c pngwrite.c -fPIC
+[4674][environment]                           -DPIC -o .libs/pngwrite.o
+[4674][environment] Available memory at startup: 2537 MB
+[4674][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), dotnet-resource-leak (C#/.Net), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java, C#/.Net)
+[4674][      debug] 
+[4674][      debug] *** Beginning capture of file /home/mayar/libpng-1.6.40/pngwrite.c ***
+[4674][      debug] Loading the following linters files: /home/mayar/infer-linux64-v1.1.0/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[4674][      debug] Elapsed: 251ms.
+[4674][      debug] GC stats for capture:
+[4674][      debug]   minor_words: 1.43823e+07
+[4674][      debug]   promoted_words: 1.39228e+06
+[4674][      debug]   major_words: 1.47406e+06
+[4674][      debug]   minor_collections: 16
+[4674][      debug]   major_collections: 2
+[4674][      debug]   compactions: 0
+[4674][      debug]   top_heap_words: 1761792
+[4674][      debug]   
+[4674][      debug] GC stats for main_process_full:
+[4674][      debug]   minor_words: 1.58059e+07
+[4674][      debug]   promoted_words: 1.55787e+06
+[4674][      debug]   major_words: 1.66031e+06
+[4674][      debug]   minor_collections: 20
+[4674][      debug]   major_collections: 4
+[4674][      debug]   compactions: 1
+[4674][      debug]   top_heap_words: 1761792
+[4674][      debug]   
+[4674][environment] Scheduler: file
+[4674][environment] Cores used: 2
+[4674][environment] 
+[4682][environment] CWD = /home/mayar/libpng-1.6.40
+[4682][environment] No .inferconfig file found
+[4682][environment] Project root = /home/mayar/libpng-1.6.40
+[4682][environment] INFER_ARGS =   @/tmp/args.tmp.7005ca
+[4682][environment] command line arguments:   gcc -DHAVE_CONFIG_H -I. -g -O2 -MT pngwrite.lo -MD
+[4682][environment]                           -MP -MF .deps/pngwrite.Tpo -c pngwrite.c -o
+[4682][environment]                           pngwrite.o
+[4682][environment] Available memory at startup: 2523 MB
+[4682][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), dotnet-resource-leak (C#/.Net), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java, C#/.Net)
+[4682][      debug] 
+[4682][      debug] *** Beginning capture of file /home/mayar/libpng-1.6.40/pngwrite.c ***
+[4682][      debug] Loading the following linters files: /home/mayar/infer-linux64-v1.1.0/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[4682][      debug] Merging capture data for already-captured 'pngwrite.c'
+[4682][      debug] Elapsed: 207ms.
+[4682][      debug] GC stats for capture:
+[4682][      debug]   minor_words: 1.43828e+07
+[4682][      debug]   promoted_words: 1.3922e+06
+[4682][      debug]   major_words: 1.48598e+06
+[4682][      debug]   minor_collections: 16
+[4682][      debug]   major_collections: 2
+[4682][      debug]   compactions: 0
+[4682][      debug]   top_heap_words: 1761792
+[4682][      debug]   
+[4682][      debug] GC stats for main_process_full:
+[4682][      debug]   minor_words: 1.58057e+07
+[4682][      debug]   promoted_words: 1.55778e+06
+[4682][      debug]   major_words: 1.67221e+06
+[4682][      debug]   minor_collections: 20
+[4682][      debug]   major_collections: 4
+[4682][      debug]   compactions: 1
+[4682][      debug]   top_heap_words: 1761792
+[4682][      debug]   
+[4682][environment] Scheduler: file
+[4682][environment] Cores used: 2
+[4682][environment] 
+[4728][environment] CWD = /home/mayar/libpng-1.6.40
+[4728][environment] No .inferconfig file found
+[4728][environment] Project root = /home/mayar/libpng-1.6.40
+[4728][environment] INFER_ARGS =   @/tmp/args.tmp.0104f8
+[4728][environment] command line arguments:   gcc -DHAVE_CONFIG_H -I. -g -O2 -MT pngwtran.lo -MD
+[4728][environment]                           -MP -MF .deps/pngwtran.Tpo -c pngwtran.c -fPIC
+[4728][environment]                           -DPIC -o .libs/pngwtran.o
+[4728][environment] Available memory at startup: 2534 MB
+[4728][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), dotnet-resource-leak (C#/.Net), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java, C#/.Net)
+[4728][      debug] 
+[4728][      debug] *** Beginning capture of file /home/mayar/libpng-1.6.40/pngwtran.c ***
+[4728][      debug] Loading the following linters files: /home/mayar/infer-linux64-v1.1.0/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[4728][      debug] Elapsed: 115ms.
+[4728][      debug] GC stats for capture:
+[4728][      debug]   minor_words: 7.00894e+06
+[4728][      debug]   promoted_words: 839812
+[4728][      debug]   major_words: 885897
+[4728][      debug]   minor_collections: 8
+[4728][      debug]   major_collections: 1
+[4728][      debug]   compactions: 0
+[4728][      debug]   top_heap_words: 1157632
+[4728][      debug]   
+[4728][      debug] GC stats for main_process_full:
+[4728][      debug]   minor_words: 8.43247e+06
+[4728][      debug]   promoted_words: 1.00541e+06
+[4728][      debug]   major_words: 1.07215e+06
+[4728][      debug]   minor_collections: 12
+[4728][      debug]   major_collections: 3
+[4728][      debug]   compactions: 1
+[4728][      debug]   top_heap_words: 1157632
+[4728][      debug]   
+[4728][environment] Scheduler: file
+[4728][environment] Cores used: 2
+[4728][environment] 
+[4736][environment] CWD = /home/mayar/libpng-1.6.40
+[4736][environment] No .inferconfig file found
+[4736][environment] Project root = /home/mayar/libpng-1.6.40
+[4736][environment] INFER_ARGS =   @/tmp/args.tmp.fc2ca6
+[4736][environment] command line arguments:   gcc -DHAVE_CONFIG_H -I. -g -O2 -MT pngwtran.lo -MD
+[4736][environment]                           -MP -MF .deps/pngwtran.Tpo -c pngwtran.c -o
+[4736][environment]                           pngwtran.o
+[4736][environment] Available memory at startup: 2534 MB
+[4736][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), dotnet-resource-leak (C#/.Net), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java, C#/.Net)
+[4736][      debug] 
+[4736][      debug] *** Beginning capture of file /home/mayar/libpng-1.6.40/pngwtran.c ***
+[4736][      debug] Loading the following linters files: /home/mayar/infer-linux64-v1.1.0/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[4736][      debug] Merging capture data for already-captured 'pngwtran.c'
+[4736][      debug] Elapsed: 103ms.
+[4736][      debug] GC stats for capture:
+[4736][      debug]   minor_words: 7.009e+06
+[4736][      debug]   promoted_words: 839740
+[4736][      debug]   major_words: 892881
+[4736][      debug]   minor_collections: 8
+[4736][      debug]   major_collections: 1
+[4736][      debug]   compactions: 0
+[4736][      debug]   top_heap_words: 1157632
+[4736][      debug]   
+[4736][      debug] GC stats for main_process_full:
+[4736][      debug]   minor_words: 8.43192e+06
+[4736][      debug]   promoted_words: 1.00532e+06
+[4736][      debug]   major_words: 1.07911e+06
+[4736][      debug]   minor_collections: 12
+[4736][      debug]   major_collections: 3
+[4736][      debug]   compactions: 1
+[4736][      debug]   top_heap_words: 1157632
+[4736][      debug]   
+[4736][environment] Scheduler: file
+[4736][environment] Cores used: 2
+[4736][environment] 
+[4782][environment] CWD = /home/mayar/libpng-1.6.40
+[4782][environment] No .inferconfig file found
+[4782][environment] Project root = /home/mayar/libpng-1.6.40
+[4782][environment] INFER_ARGS =   @/tmp/args.tmp.86dd04
+[4782][environment] command line arguments:   gcc -DHAVE_CONFIG_H -I. -g -O2 -MT pngwutil.lo -MD
+[4782][environment]                           -MP -MF .deps/pngwutil.Tpo -c pngwutil.c -fPIC
+[4782][environment]                           -DPIC -o .libs/pngwutil.o
+[4782][environment] Available memory at startup: 2532 MB
+[4782][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), dotnet-resource-leak (C#/.Net), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java, C#/.Net)
+[4782][      debug] 
+[4782][      debug] *** Beginning capture of file /home/mayar/libpng-1.6.40/pngwutil.c ***
+[4782][      debug] Loading the following linters files: /home/mayar/infer-linux64-v1.1.0/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[4782][      debug] Elapsed: 248ms.
+[4782][      debug] GC stats for capture:
+[4782][      debug]   minor_words: 1.7834e+07
+[4782][      debug]   promoted_words: 1.61157e+06
+[4782][      debug]   major_words: 1.71946e+06
+[4782][      debug]   minor_collections: 19
+[4782][      debug]   major_collections: 2
+[4782][      debug]   compactions: 0
+[4782][      debug]   top_heap_words: 1761792
+[4782][      debug]   
+[4782][      debug] GC stats for main_process_full:
+[4782][      debug]   minor_words: 1.92575e+07
+[4782][      debug]   promoted_words: 1.77717e+06
+[4782][      debug]   major_words: 1.90571e+06
+[4782][      debug]   minor_collections: 23
+[4782][      debug]   major_collections: 4
+[4782][      debug]   compactions: 1
+[4782][      debug]   top_heap_words: 1761792
+[4782][      debug]   
+[4782][environment] Scheduler: file
+[4782][environment] Cores used: 2
+[4782][environment] 
+[4790][environment] CWD = /home/mayar/libpng-1.6.40
+[4790][environment] No .inferconfig file found
+[4790][environment] Project root = /home/mayar/libpng-1.6.40
+[4790][environment] INFER_ARGS =   @/tmp/args.tmp.a565e5
+[4790][environment] command line arguments:   gcc -DHAVE_CONFIG_H -I. -g -O2 -MT pngwutil.lo -MD
+[4790][environment]                           -MP -MF .deps/pngwutil.Tpo -c pngwutil.c -o
+[4790][environment]                           pngwutil.o
+[4790][environment] Available memory at startup: 2534 MB
+[4790][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), dotnet-resource-leak (C#/.Net), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java, C#/.Net)
+[4790][      debug] 
+[4790][      debug] *** Beginning capture of file /home/mayar/libpng-1.6.40/pngwutil.c ***
+[4790][      debug] Loading the following linters files: /home/mayar/infer-linux64-v1.1.0/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[4790][      debug] Merging capture data for already-captured 'pngwutil.c'
+[4790][      debug] Elapsed: 229ms.
+[4790][      debug] GC stats for capture:
+[4790][      debug]   minor_words: 1.78342e+07
+[4790][      debug]   promoted_words: 1.6111e+06
+[4790][      debug]   major_words: 1.72812e+06
+[4790][      debug]   minor_collections: 19
+[4790][      debug]   major_collections: 2
+[4790][      debug]   compactions: 0
+[4790][      debug]   top_heap_words: 1761792
+[4790][      debug]   
+[4790][      debug] GC stats for main_process_full:
+[4790][      debug]   minor_words: 1.92572e+07
+[4790][      debug]   promoted_words: 1.77668e+06
+[4790][      debug]   major_words: 1.91436e+06
+[4790][      debug]   minor_collections: 23
+[4790][      debug]   major_collections: 4
+[4790][      debug]   compactions: 1
+[4790][      debug]   top_heap_words: 1761792
+[4790][      debug]   
+[4790][environment] Scheduler: file
+[4790][environment] Cores used: 2
+[4790][environment] 
+[4840][environment] CWD = /home/mayar/libpng-1.6.40
+[4840][environment] No .inferconfig file found
+[4840][environment] Project root = /home/mayar/libpng-1.6.40
+[4840][environment] INFER_ARGS =   @/tmp/args.tmp.3d4707
+[4840][environment] command line arguments:   gcc -DHAVE_CONFIG_H -I. -g -O2 -MT
+[4840][environment]                           mips/mips_init.lo -MD -MP -MF
+[4840][environment]                           mips/.deps/mips_init.Tpo -c mips/mips_init.c -fPIC
+[4840][environment]                           -DPIC -o mips/.libs/mips_init.o
+[4840][environment] Available memory at startup: 2531 MB
+[4840][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), dotnet-resource-leak (C#/.Net), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java, C#/.Net)
+[4840][      debug] 
+[4840][      debug] *** Beginning capture of file /home/mayar/libpng-1.6.40/mips/mips_init.c ***
+[4840][      debug] Loading the following linters files: /home/mayar/infer-linux64-v1.1.0/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[4840][      debug] Elapsed: 69.345ms.
+[4840][      debug] GC stats for capture:
+[4840][      debug]   minor_words: 4.47938e+06
+[4840][      debug]   promoted_words: 652958
+[4840][      debug]   major_words: 684817
+[4840][      debug]   minor_collections: 5
+[4840][      debug]   major_collections: 0
+[4840][      debug]   compactions: 0
+[4840][      debug]   top_heap_words: 875008
+[4840][      debug]   
+[4840][      debug] GC stats for main_process_full:
+[4840][      debug]   minor_words: 5.90293e+06
+[4840][      debug]   promoted_words: 818561
+[4840][      debug]   major_words: 871072
+[4840][      debug]   minor_collections: 9
+[4840][      debug]   major_collections: 2
+[4840][      debug]   compactions: 1
+[4840][      debug]   top_heap_words: 875008
+[4840][      debug]   
+[4840][environment] Scheduler: file
+[4840][environment] Cores used: 2
+[4840][environment] 
+[4848][environment] CWD = /home/mayar/libpng-1.6.40
+[4848][environment] No .inferconfig file found
+[4848][environment] Project root = /home/mayar/libpng-1.6.40
+[4848][environment] INFER_ARGS =   @/tmp/args.tmp.b17f80
+[4848][environment] command line arguments:   gcc -DHAVE_CONFIG_H -I. -g -O2 -MT
+[4848][environment]                           mips/mips_init.lo -MD -MP -MF
+[4848][environment]                           mips/.deps/mips_init.Tpo -c mips/mips_init.c -o
+[4848][environment]                           mips/mips_init.o
+[4848][environment] Available memory at startup: 2522 MB
+[4848][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), dotnet-resource-leak (C#/.Net), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java, C#/.Net)
+[4848][      debug] 
+[4848][      debug] *** Beginning capture of file /home/mayar/libpng-1.6.40/mips/mips_init.c ***
+[4848][      debug] Loading the following linters files: /home/mayar/infer-linux64-v1.1.0/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[4848][      debug] Merging capture data for already-captured 'mips/mips_init.c'
+[4848][      debug] Elapsed: 69.616ms.
+[4848][      debug] GC stats for capture:
+[4848][      debug]   minor_words: 4.47929e+06
+[4848][      debug]   promoted_words: 656411
+[4848][      debug]   major_words: 689334
+[4848][      debug]   minor_collections: 6
+[4848][      debug]   major_collections: 1
+[4848][      debug]   compactions: 0
+[4848][      debug]   top_heap_words: 875008
+[4848][      debug]   
+[4848][      debug] GC stats for main_process_full:
+[4848][      debug]   minor_words: 5.90224e+06
+[4848][      debug]   promoted_words: 821998
+[4848][      debug]   major_words: 875573
+[4848][      debug]   minor_collections: 10
+[4848][      debug]   major_collections: 3
+[4848][      debug]   compactions: 1
+[4848][      debug]   top_heap_words: 875008
+[4848][      debug]   
+[4848][environment] Scheduler: file
+[4848][environment] Cores used: 2
+[4848][environment] 
+[4894][environment] CWD = /home/mayar/libpng-1.6.40
+[4894][environment] No .inferconfig file found
+[4894][environment] Project root = /home/mayar/libpng-1.6.40
+[4894][environment] INFER_ARGS =   @/tmp/args.tmp.d0f630
+[4894][environment] command line arguments:   gcc -DHAVE_CONFIG_H -I. -g -O2 -MT
+[4894][environment]                           mips/filter_msa_intrinsics.lo -MD -MP -MF
+[4894][environment]                           mips/.deps/filter_msa_intrinsics.Tpo -c
+[4894][environment]                           mips/filter_msa_intrinsics.c -fPIC -DPIC -o
+[4894][environment]                           mips/.libs/filter_msa_intrinsics.o
+[4894][environment] Available memory at startup: 2513 MB
+[4894][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), dotnet-resource-leak (C#/.Net), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java, C#/.Net)
+[4894][      debug] 
+[4894][      debug] *** Beginning capture of file /home/mayar/libpng-1.6.40/mips/filter_msa_intrinsics.c ***
+[4894][      debug] Loading the following linters files: /home/mayar/infer-linux64-v1.1.0/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[4894][      debug] Elapsed: 88.589ms.
+[4894][      debug] GC stats for capture:
+[4894][      debug]   minor_words: 5.4848e+06
+[4894][      debug]   promoted_words: 769402
+[4894][      debug]   major_words: 802478
+[4894][      debug]   minor_collections: 7
+[4894][      debug]   major_collections: 1
+[4894][      debug]   compactions: 0
+[4894][      debug]   top_heap_words: 1006592
+[4894][      debug]   
+[4894][      debug] GC stats for main_process_full:
+[4894][      debug]   minor_words: 6.90838e+06
+[4894][      debug]   promoted_words: 935016
+[4894][      debug]   major_words: 988744
+[4894][      debug]   minor_collections: 11
+[4894][      debug]   major_collections: 3
+[4894][      debug]   compactions: 1
+[4894][      debug]   top_heap_words: 1006592
+[4894][      debug]   
+[4894][environment] Scheduler: file
+[4894][environment] Cores used: 2
+[4894][environment] 
+[4902][environment] CWD = /home/mayar/libpng-1.6.40
+[4902][environment] No .inferconfig file found
+[4902][environment] Project root = /home/mayar/libpng-1.6.40
+[4902][environment] INFER_ARGS =   @/tmp/args.tmp.1e5d28
+[4902][environment] command line arguments:   gcc -DHAVE_CONFIG_H -I. -g -O2 -MT
+[4902][environment]                           mips/filter_msa_intrinsics.lo -MD -MP -MF
+[4902][environment]                           mips/.deps/filter_msa_intrinsics.Tpo -c
+[4902][environment]                           mips/filter_msa_intrinsics.c -o
+[4902][environment]                           mips/filter_msa_intrinsics.o
+[4902][environment] Available memory at startup: 2535 MB
+[4902][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), dotnet-resource-leak (C#/.Net), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java, C#/.Net)
+[4902][      debug] 
+[4902][      debug] *** Beginning capture of file /home/mayar/libpng-1.6.40/mips/filter_msa_intrinsics.c ***
+[4902][      debug] Loading the following linters files: /home/mayar/infer-linux64-v1.1.0/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[4902][      debug] Merging capture data for already-captured 'mips/filter_msa_intrinsics.c'
+[4902][      debug] Elapsed: 84.922ms.
+[4902][      debug] GC stats for capture:
+[4902][      debug]   minor_words: 5.48471e+06
+[4902][      debug]   promoted_words: 769330
+[4902][      debug]   major_words: 803470
+[4902][      debug]   minor_collections: 7
+[4902][      debug]   major_collections: 1
+[4902][      debug]   compactions: 0
+[4902][      debug]   top_heap_words: 1006592
+[4902][      debug]   
+[4902][      debug] GC stats for main_process_full:
+[4902][      debug]   minor_words: 6.90769e+06
+[4902][      debug]   promoted_words: 934927
+[4902][      debug]   major_words: 989719
+[4902][      debug]   minor_collections: 11
+[4902][      debug]   major_collections: 3
+[4902][      debug]   compactions: 1
+[4902][      debug]   top_heap_words: 1006592
+[4902][      debug]   
+[4902][environment] Scheduler: file
+[4902][environment] Cores used: 2
+[4902][environment] 
+[4952][environment] CWD = /home/mayar/libpng-1.6.40
+[4952][environment] No .inferconfig file found
+[4952][environment] Project root = /home/mayar/libpng-1.6.40
+[4952][environment] INFER_ARGS =   @/tmp/args.tmp.93cb2d
+[4952][environment] command line arguments:   gcc -DHAVE_CONFIG_H -I. -g -O2 -MT
+[4952][environment]                           intel/intel_init.lo -MD -MP -MF
+[4952][environment]                           intel/.deps/intel_init.Tpo -c intel/intel_init.c
+[4952][environment]                           -fPIC -DPIC -o intel/.libs/intel_init.o
+[4952][environment] Available memory at startup: 2525 MB
+[4952][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), dotnet-resource-leak (C#/.Net), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java, C#/.Net)
+[4952][      debug] 
+[4952][      debug] *** Beginning capture of file /home/mayar/libpng-1.6.40/intel/intel_init.c ***
+[4952][      debug] Loading the following linters files: /home/mayar/infer-linux64-v1.1.0/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[4952][      debug] Elapsed: 135ms.
+[4952][      debug] GC stats for capture:
+[4952][      debug]   minor_words: 4.47932e+06
+[4952][      debug]   promoted_words: 656395
+[4952][      debug]   major_words: 688254
+[4952][      debug]   minor_collections: 6
+[4952][      debug]   major_collections: 1
+[4952][      debug]   compactions: 0
+[4952][      debug]   top_heap_words: 875008
+[4952][      debug]   
+[4952][      debug] GC stats for main_process_full:
+[4952][      debug]   minor_words: 5.90287e+06
+[4952][      debug]   promoted_words: 822000
+[4952][      debug]   major_words: 874511
+[4952][      debug]   minor_collections: 10
+[4952][      debug]   major_collections: 3
+[4952][      debug]   compactions: 1
+[4952][      debug]   top_heap_words: 875008
+[4952][      debug]   
+[4952][environment] Scheduler: file
+[4952][environment] Cores used: 2
+[4952][environment] 
+[4960][environment] CWD = /home/mayar/libpng-1.6.40
+[4960][environment] No .inferconfig file found
+[4960][environment] Project root = /home/mayar/libpng-1.6.40
+[4960][environment] INFER_ARGS =   @/tmp/args.tmp.92a21f
+[4960][environment] command line arguments:   gcc -DHAVE_CONFIG_H -I. -g -O2 -MT
+[4960][environment]                           intel/intel_init.lo -MD -MP -MF
+[4960][environment]                           intel/.deps/intel_init.Tpo -c intel/intel_init.c -o
+[4960][environment]                           intel/intel_init.o
+[4960][environment] Available memory at startup: 2516 MB
+[4960][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), dotnet-resource-leak (C#/.Net), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java, C#/.Net)
+[4960][      debug] 
+[4960][      debug] *** Beginning capture of file /home/mayar/libpng-1.6.40/intel/intel_init.c ***
+[4960][      debug] Loading the following linters files: /home/mayar/infer-linux64-v1.1.0/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[4960][      debug] Merging capture data for already-captured 'intel/intel_init.c'
+[4960][      debug] Elapsed: 81.784ms.
+[4960][      debug] GC stats for capture:
+[4960][      debug]   minor_words: 4.47923e+06
+[4960][      debug]   promoted_words: 652804
+[4960][      debug]   major_words: 685727
+[4960][      debug]   minor_collections: 5
+[4960][      debug]   major_collections: 0
+[4960][      debug]   compactions: 0
+[4960][      debug]   top_heap_words: 875008
+[4960][      debug]   
+[4960][      debug] GC stats for main_process_full:
+[4960][      debug]   minor_words: 5.90218e+06
+[4960][      debug]   promoted_words: 818392
+[4960][      debug]   major_words: 871967
+[4960][      debug]   minor_collections: 9
+[4960][      debug]   major_collections: 2
+[4960][      debug]   compactions: 1
+[4960][      debug]   top_heap_words: 875008
+[4960][      debug]   
+[4960][environment] Scheduler: file
+[4960][environment] Cores used: 2
+[4960][environment] 
+[5006][environment] CWD = /home/mayar/libpng-1.6.40
+[5006][environment] No .inferconfig file found
+[5006][environment] Project root = /home/mayar/libpng-1.6.40
+[5006][environment] INFER_ARGS =   @/tmp/args.tmp.1e0dcb
+[5006][environment] command line arguments:   gcc -DHAVE_CONFIG_H -I. -g -O2 -MT
+[5006][environment]                           intel/filter_sse2_intrinsics.lo -MD -MP -MF
+[5006][environment]                           intel/.deps/filter_sse2_intrinsics.Tpo -c
+[5006][environment]                           intel/filter_sse2_intrinsics.c -fPIC -DPIC -o
+[5006][environment]                           intel/.libs/filter_sse2_intrinsics.o
+[5006][environment] Available memory at startup: 2535 MB
+[5006][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), dotnet-resource-leak (C#/.Net), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java, C#/.Net)
+[5006][      debug] 
+[5006][      debug] *** Beginning capture of file /home/mayar/libpng-1.6.40/intel/filter_sse2_intrinsics.c ***
+[5006][      debug] Loading the following linters files: /home/mayar/infer-linux64-v1.1.0/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[5006][      debug] Elapsed: 72.085ms.
+[5006][      debug] GC stats for capture:
+[5006][      debug]   minor_words: 4.4794e+06
+[5006][      debug]   promoted_words: 652876
+[5006][      debug]   major_words: 684735
+[5006][      debug]   minor_collections: 5
+[5006][      debug]   major_collections: 0
+[5006][      debug]   compactions: 0
+[5006][      debug]   top_heap_words: 875008
+[5006][      debug]   
+[5006][      debug] GC stats for main_process_full:
+[5006][      debug]   minor_words: 5.90298e+06
+[5006][      debug]   promoted_words: 818491
+[5006][      debug]   major_words: 871002
+[5006][      debug]   minor_collections: 9
+[5006][      debug]   major_collections: 2
+[5006][      debug]   compactions: 1
+[5006][      debug]   top_heap_words: 875008
+[5006][      debug]   
+[5006][environment] Scheduler: file
+[5006][environment] Cores used: 2
+[5006][environment] 
+[5014][environment] CWD = /home/mayar/libpng-1.6.40
+[5014][environment] No .inferconfig file found
+[5014][environment] Project root = /home/mayar/libpng-1.6.40
+[5014][environment] INFER_ARGS =   @/tmp/args.tmp.b41dd4
+[5014][environment] command line arguments:   gcc -DHAVE_CONFIG_H -I. -g -O2 -MT
+[5014][environment]                           intel/filter_sse2_intrinsics.lo -MD -MP -MF
+[5014][environment]                           intel/.deps/filter_sse2_intrinsics.Tpo -c
+[5014][environment]                           intel/filter_sse2_intrinsics.c -o
+[5014][environment]                           intel/filter_sse2_intrinsics.o
+[5014][environment] Available memory at startup: 2535 MB
+[5014][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), dotnet-resource-leak (C#/.Net), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java, C#/.Net)
+[5014][      debug] 
+[5014][      debug] *** Beginning capture of file /home/mayar/libpng-1.6.40/intel/filter_sse2_intrinsics.c ***
+[5014][      debug] Loading the following linters files: /home/mayar/infer-linux64-v1.1.0/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[5014][      debug] Merging capture data for already-captured 'intel/filter_sse2_intrinsics.c'
+[5014][      debug] Elapsed: 80.01ms.
+[5014][      debug] GC stats for capture:
+[5014][      debug]   minor_words: 4.47931e+06
+[5014][      debug]   promoted_words: 652804
+[5014][      debug]   major_words: 685727
+[5014][      debug]   minor_collections: 5
+[5014][      debug]   major_collections: 0
+[5014][      debug]   compactions: 0
+[5014][      debug]   top_heap_words: 875008
+[5014][      debug]   
+[5014][      debug] GC stats for main_process_full:
+[5014][      debug]   minor_words: 5.90229e+06
+[5014][      debug]   promoted_words: 818402
+[5014][      debug]   major_words: 871977
+[5014][      debug]   minor_collections: 9
+[5014][      debug]   major_collections: 2
+[5014][      debug]   compactions: 1
+[5014][      debug]   top_heap_words: 875008
+[5014][      debug]   
+[5014][environment] Scheduler: file
+[5014][environment] Cores used: 2
+[5014][environment] 
+[5064][environment] CWD = /home/mayar/libpng-1.6.40
+[5064][environment] No .inferconfig file found
+[5064][environment] Project root = /home/mayar/libpng-1.6.40
+[5064][environment] INFER_ARGS =   @/tmp/args.tmp.468d23
+[5064][environment] command line arguments:   gcc -DHAVE_CONFIG_H -I. -g -O2 -MT
+[5064][environment]                           powerpc/powerpc_init.lo -MD -MP -MF
+[5064][environment]                           powerpc/.deps/powerpc_init.Tpo -c
+[5064][environment]                           powerpc/powerpc_init.c -fPIC -DPIC -o
+[5064][environment]                           powerpc/.libs/powerpc_init.o
+[5064][environment] Available memory at startup: 2534 MB
+[5064][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), dotnet-resource-leak (C#/.Net), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java, C#/.Net)
+[5064][      debug] 
+[5064][      debug] *** Beginning capture of file /home/mayar/libpng-1.6.40/powerpc/powerpc_init.c ***
+[5064][      debug] Loading the following linters files: /home/mayar/infer-linux64-v1.1.0/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[5064][      debug] Elapsed: 71.593ms.
+[5064][      debug] GC stats for capture:
+[5064][      debug]   minor_words: 4.4794e+06
+[5064][      debug]   promoted_words: 656419
+[5064][      debug]   major_words: 688278
+[5064][      debug]   minor_collections: 6
+[5064][      debug]   major_collections: 1
+[5064][      debug]   compactions: 0
+[5064][      debug]   top_heap_words: 875008
+[5064][      debug]   
+[5064][      debug] GC stats for main_process_full:
+[5064][      debug]   minor_words: 5.90296e+06
+[5064][      debug]   promoted_words: 822026
+[5064][      debug]   major_words: 874537
+[5064][      debug]   minor_collections: 10
+[5064][      debug]   major_collections: 3
+[5064][      debug]   compactions: 1
+[5064][      debug]   top_heap_words: 875008
+[5064][      debug]   
+[5064][environment] Scheduler: file
+[5064][environment] Cores used: 2
+[5064][environment] 
+[5072][environment] CWD = /home/mayar/libpng-1.6.40
+[5072][environment] No .inferconfig file found
+[5072][environment] Project root = /home/mayar/libpng-1.6.40
+[5072][environment] INFER_ARGS =   @/tmp/args.tmp.b93111
+[5072][environment] command line arguments:   gcc -DHAVE_CONFIG_H -I. -g -O2 -MT
+[5072][environment]                           powerpc/powerpc_init.lo -MD -MP -MF
+[5072][environment]                           powerpc/.deps/powerpc_init.Tpo -c
+[5072][environment]                           powerpc/powerpc_init.c -o powerpc/powerpc_init.o
+[5072][environment] Available memory at startup: 2521 MB
+[5072][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), dotnet-resource-leak (C#/.Net), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java, C#/.Net)
+[5072][      debug] 
+[5072][      debug] *** Beginning capture of file /home/mayar/libpng-1.6.40/powerpc/powerpc_init.c ***
+[5072][      debug] Loading the following linters files: /home/mayar/infer-linux64-v1.1.0/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[5072][      debug] Merging capture data for already-captured 'powerpc/powerpc_init.c'
+[5072][      debug] Elapsed: 68.902ms.
+[5072][      debug] GC stats for capture:
+[5072][      debug]   minor_words: 4.47931e+06
+[5072][      debug]   promoted_words: 652833
+[5072][      debug]   major_words: 685756
+[5072][      debug]   minor_collections: 5
+[5072][      debug]   major_collections: 0
+[5072][      debug]   compactions: 0
+[5072][      debug]   top_heap_words: 875008
+[5072][      debug]   
+[5072][      debug] GC stats for main_process_full:
+[5072][      debug]   minor_words: 5.90227e+06
+[5072][      debug]   promoted_words: 818423
+[5072][      debug]   major_words: 871998
+[5072][      debug]   minor_collections: 9
+[5072][      debug]   major_collections: 2
+[5072][      debug]   compactions: 1
+[5072][      debug]   top_heap_words: 875008
+[5072][      debug]   
+[5072][environment] Scheduler: file
+[5072][environment] Cores used: 2
+[5072][environment] 
+[5118][environment] CWD = /home/mayar/libpng-1.6.40
+[5118][environment] No .inferconfig file found
+[5118][environment] Project root = /home/mayar/libpng-1.6.40
+[5118][environment] INFER_ARGS =   @/tmp/args.tmp.a10e4f
+[5118][environment] command line arguments:   gcc -DHAVE_CONFIG_H -I. -g -O2 -MT
+[5118][environment]                           powerpc/filter_vsx_intrinsics.lo -MD -MP -MF
+[5118][environment]                           powerpc/.deps/filter_vsx_intrinsics.Tpo -c
+[5118][environment]                           powerpc/filter_vsx_intrinsics.c -fPIC -DPIC -o
+[5118][environment]                           powerpc/.libs/filter_vsx_intrinsics.o
+[5118][environment] Available memory at startup: 2535 MB
+[5118][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), dotnet-resource-leak (C#/.Net), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java, C#/.Net)
+[5118][      debug] 
+[5118][      debug] *** Beginning capture of file /home/mayar/libpng-1.6.40/powerpc/filter_vsx_intrinsics.c ***
+[5118][      debug] Loading the following linters files: /home/mayar/infer-linux64-v1.1.0/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[5118][      debug] Elapsed: 92.054ms.
+[5118][      debug] GC stats for capture:
+[5118][      debug]   minor_words: 5.48483e+06
+[5118][      debug]   promoted_words: 769398
+[5118][      debug]   major_words: 802474
+[5118][      debug]   minor_collections: 7
+[5118][      debug]   major_collections: 1
+[5118][      debug]   compactions: 0
+[5118][      debug]   top_heap_words: 1006592
+[5118][      debug]   
+[5118][      debug] GC stats for main_process_full:
+[5118][      debug]   minor_words: 6.90842e+06
+[5118][      debug]   promoted_words: 935015
+[5118][      debug]   major_words: 988743
+[5118][      debug]   minor_collections: 11
+[5118][      debug]   major_collections: 3
+[5118][      debug]   compactions: 1
+[5118][      debug]   top_heap_words: 1006592
+[5118][      debug]   
+[5118][environment] Scheduler: file
+[5118][environment] Cores used: 2
+[5118][environment] 
+[5126][environment] CWD = /home/mayar/libpng-1.6.40
+[5126][environment] No .inferconfig file found
+[5126][environment] Project root = /home/mayar/libpng-1.6.40
+[5126][environment] INFER_ARGS =   @/tmp/args.tmp.296654
+[5126][environment] command line arguments:   gcc -DHAVE_CONFIG_H -I. -g -O2 -MT
+[5126][environment]                           powerpc/filter_vsx_intrinsics.lo -MD -MP -MF
+[5126][environment]                           powerpc/.deps/filter_vsx_intrinsics.Tpo -c
+[5126][environment]                           powerpc/filter_vsx_intrinsics.c -o
+[5126][environment]                           powerpc/filter_vsx_intrinsics.o
+[5126][environment] Available memory at startup: 2525 MB
+[5126][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), dotnet-resource-leak (C#/.Net), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java, C#/.Net)
+[5126][      debug] 
+[5126][      debug] *** Beginning capture of file /home/mayar/libpng-1.6.40/powerpc/filter_vsx_intrinsics.c ***
+[5126][      debug] Loading the following linters files: /home/mayar/infer-linux64-v1.1.0/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[5126][      debug] Merging capture data for already-captured 'powerpc/filter_vsx_intrinsics.c'
+[5126][      debug] Elapsed: 98.557ms.
+[5126][      debug] GC stats for capture:
+[5126][      debug]   minor_words: 5.48474e+06
+[5126][      debug]   promoted_words: 769320
+[5126][      debug]   major_words: 803460
+[5126][      debug]   minor_collections: 7
+[5126][      debug]   major_collections: 1
+[5126][      debug]   compactions: 0
+[5126][      debug]   top_heap_words: 1006592
+[5126][      debug]   
+[5126][      debug] GC stats for main_process_full:
+[5126][      debug]   minor_words: 6.90772e+06
+[5126][      debug]   promoted_words: 934919
+[5126][      debug]   major_words: 989711
+[5126][      debug]   minor_collections: 11
+[5126][      debug]   major_collections: 3
+[5126][      debug]   compactions: 1
+[5126][      debug]   top_heap_words: 1006592
+[5126][      debug]   
+[5126][environment] Scheduler: file
+[5126][environment] Cores used: 2
+[5126][environment] 
+[5137][environment] CWD = /home/mayar/libpng-1.6.40
+[5137][environment] No .inferconfig file found
+[5137][environment] Project root = /home/mayar/libpng-1.6.40
+[5137][environment] INFER_ARGS =   @/tmp/args.tmp.92ecc0
+[5137][environment] command line arguments:   gcc -E -DHAVE_CONFIG_H -I. -DPNGLIB_LIBNAME=PNG16_0
+[5137][environment]                           -DPNGLIB_VERSION=1.6.40 -DSYMBOL_PREFIX=
+[5137][environment]                           -DPNG_NO_USE_READ_MACROS
+[5137][environment]                           -DPNG_BUILDING_SYMBOL_TABLE scripts/vers.c
+[5137][environment] Available memory at startup: 2537 MB
+[5137][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), dotnet-resource-leak (C#/.Net), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java, C#/.Net)
+[5137][      debug] GC stats for capture:
+[5137][      debug]   minor_words: 11975
+[5137][      debug]   promoted_words: 0
+[5137][      debug]   major_words: 0
+[5137][      debug]   minor_collections: 0
+[5137][      debug]   major_collections: 0
+[5137][      debug]   compactions: 0
+[5137][      debug]   top_heap_words: 188416
+[5137][      debug]   
+[5137][      debug] GC stats for main_process_full:
+[5137][      debug]   minor_words: 1.43421e+06
+[5137][      debug]   promoted_words: 165561
+[5137][      debug]   major_words: 186213
+[5137][      debug]   minor_collections: 4
+[5137][      debug]   major_collections: 2
+[5137][      debug]   compactions: 1
+[5137][      debug]   top_heap_words: 188416
+[5137][      debug]   
+[5137][environment] Scheduler: file
+[5137][environment] Cores used: 2
+[5137][environment] 
+[5201][environment] CWD = /home/mayar/libpng-1.6.40
+[5201][environment] No .inferconfig file found
+[5201][environment] Project root = /home/mayar/libpng-1.6.40
+[5201][environment] INFER_ARGS =   @/tmp/args.tmp.be4db2
+[5201][environment] command line arguments:   gcc -shared -fPIC -DPIC .libs/png.o
+[5201][environment]                           .libs/pngerror.o .libs/pngget.o .libs/pngmem.o
+[5201][environment]                           .libs/pngpread.o .libs/pngread.o .libs/pngrio.o
+[5201][environment]                           .libs/pngrtran.o .libs/pngrutil.o .libs/pngset.o
+[5201][environment]                           .libs/pngtrans.o .libs/pngwio.o .libs/pngwrite.o
+[5201][environment]                           .libs/pngwtran.o .libs/pngwutil.o
+[5201][environment]                           mips/.libs/mips_init.o
+[5201][environment]                           mips/.libs/filter_msa_intrinsics.o
+[5201][environment]                           intel/.libs/intel_init.o
+[5201][environment]                           intel/.libs/filter_sse2_intrinsics.o
+[5201][environment]                           powerpc/.libs/powerpc_init.o
+[5201][environment]                           powerpc/.libs/filter_vsx_intrinsics.o -lz -lm -g
+[5201][environment]                           -O2 -Wl,--version-script=libpng.vers -Wl,-soname
+[5201][environment]                           -Wl,libpng16.so.16 -o .libs/libpng16.so.16.40.0
+[5201][environment] Available memory at startup: 2529 MB
+[5201][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), dotnet-resource-leak (C#/.Net), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java, C#/.Net)
+[5201][      debug] GC stats for capture:
+[5201][      debug]   minor_words: 9519
+[5201][      debug]   promoted_words: 0
+[5201][      debug]   major_words: 0
+[5201][      debug]   minor_collections: 0
+[5201][      debug]   major_collections: 0
+[5201][      debug]   compactions: 0
+[5201][      debug]   top_heap_words: 188416
+[5201][      debug]   
+[5201][      debug] GC stats for main_process_full:
+[5201][      debug]   minor_words: 1.43578e+06
+[5201][      debug]   promoted_words: 165816
+[5201][      debug]   major_words: 186468
+[5201][      debug]   minor_collections: 4
+[5201][      debug]   major_collections: 2
+[5201][      debug]   compactions: 1
+[5201][      debug]   top_heap_words: 188416
+[5201][      debug]   
+[5201][environment] Scheduler: file
+[5201][environment] Cores used: 2
+[5201][environment] 
+[5301][environment] CWD = /home/mayar/libpng-1.6.40
+[5301][environment] No .inferconfig file found
+[5301][environment] Project root = /home/mayar/libpng-1.6.40
+[5301][environment] INFER_ARGS =   @/tmp/args.tmp.410a08
+[5301][environment] command line arguments:   gcc -g -O2 -o .libs/pngfix contrib/tools/pngfix.o
+[5301][environment]                           ./.libs/libpng16.so -lz -lm
+[5301][environment] Available memory at startup: 2529 MB
+[5301][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), dotnet-resource-leak (C#/.Net), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java, C#/.Net)
+[5301][      debug] GC stats for capture:
+[5301][      debug]   minor_words: 6760
+[5301][      debug]   promoted_words: 0
+[5301][      debug]   major_words: 0
+[5301][      debug]   minor_collections: 0
+[5301][      debug]   major_collections: 0
+[5301][      debug]   compactions: 0
+[5301][      debug]   top_heap_words: 188416
+[5301][      debug]   
+[5301][      debug] GC stats for main_process_full:
+[5301][      debug]   minor_words: 1.4281e+06
+[5301][      debug]   promoted_words: 165533
+[5301][      debug]   major_words: 186185
+[5301][      debug]   minor_collections: 4
+[5301][      debug]   major_collections: 2
+[5301][      debug]   compactions: 1
+[5301][      debug]   top_heap_words: 188416
+[5301][      debug]   
+[5301][environment] Scheduler: file
+[5301][environment] Cores used: 2
+[5301][environment] 
+[5312][environment] CWD = /home/mayar/libpng-1.6.40
+[5312][environment] No .inferconfig file found
+[5312][environment] Project root = /home/mayar/libpng-1.6.40
+[5312][environment] INFER_ARGS =   @/tmp/args.tmp.f07a77
+[5312][environment] command line arguments:   gcc -DHAVE_CONFIG_H -I. -g -O2 -MT
+[5312][environment]                           contrib/tools/png-fix-itxt.o -MD -MP -MF
+[5312][environment]                           contrib/tools/.deps/png-fix-itxt.Tpo -c -o
+[5312][environment]                           contrib/tools/png-fix-itxt.o
+[5312][environment]                           contrib/tools/png-fix-itxt.c
+[5312][environment] Available memory at startup: 2536 MB
+[5312][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), dotnet-resource-leak (C#/.Net), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java, C#/.Net)
+[5312][      debug] 
+[5312][      debug] *** Beginning capture of file /home/mayar/libpng-1.6.40/contrib/tools/png-fix-itxt.c ***
+[5312][      debug] Loading the following linters files: /home/mayar/infer-linux64-v1.1.0/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[5312][      debug] Elapsed: 60.78ms.
+[5312][      debug] GC stats for capture:
+[5312][      debug]   minor_words: 2.72263e+06
+[5312][      debug]   promoted_words: 406116
+[5312][      debug]   major_words: 429700
+[5312][      debug]   minor_collections: 4
+[5312][      debug]   major_collections: 0
+[5312][      debug]   compactions: 0
+[5312][      debug]   top_heap_words: 661504
+[5312][      debug]   
+[5312][      debug] GC stats for main_process_full:
+[5312][      debug]   minor_words: 4.14563e+06
+[5312][      debug]   promoted_words: 571713
+[5312][      debug]   major_words: 615949
+[5312][      debug]   minor_collections: 8
+[5312][      debug]   major_collections: 2
+[5312][      debug]   compactions: 1
+[5312][      debug]   top_heap_words: 661504
+[5312][      debug]   
+[5312][environment] Scheduler: file
+[5312][environment] Cores used: 2
+[5312][environment] 
+[5368][environment] CWD = /home/mayar/libpng-1.6.40
+[5368][environment] No .inferconfig file found
+[5368][environment] Project root = /home/mayar/libpng-1.6.40
+[5368][environment] INFER_ARGS =   @/tmp/args.tmp.883c26
+[5368][environment] command line arguments:   gcc -g -O2 -o png-fix-itxt
+[5368][environment]                           contrib/tools/png-fix-itxt.o -lz -lm
+[5368][environment] Available memory at startup: 2531 MB
+[5368][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), dotnet-resource-leak (C#/.Net), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java, C#/.Net)
+[5368][      debug] GC stats for capture:
+[5368][      debug]   minor_words: 6645
+[5368][      debug]   promoted_words: 0
+[5368][      debug]   major_words: 0
+[5368][      debug]   minor_collections: 0
+[5368][      debug]   major_collections: 0
+[5368][      debug]   compactions: 0
+[5368][      debug]   top_heap_words: 188416
+[5368][      debug]   
+[5368][      debug] GC stats for main_process_full:
+[5368][      debug]   minor_words: 1.42784e+06
+[5368][      debug]   promoted_words: 165524
+[5368][      debug]   major_words: 186176
+[5368][      debug]   minor_collections: 4
+[5368][      debug]   major_collections: 2
+[5368][      debug]   compactions: 1
+[5368][      debug]   top_heap_words: 188416
+[5368][      debug]   
+[5368][environment] Scheduler: file
+[5368][environment] Cores used: 2
+[5368][environment] 
+[5379][environment] CWD = /home/mayar/libpng-1.6.40
+[5379][environment] No .inferconfig file found
+[5379][environment] Project root = /home/mayar/libpng-1.6.40
+[5379][environment] INFER_ARGS =   @/tmp/args.tmp.7f8051
+[5379][environment] command line arguments:   gcc -DHAVE_CONFIG_H -I. -g -O2 -MT pngtest.o -MD
+[5379][environment]                           -MP -MF .deps/pngtest.Tpo -c -o pngtest.o pngtest.c
+[5379][environment] Available memory at startup: 2536 MB
+[5379][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), dotnet-resource-leak (C#/.Net), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java, C#/.Net)
+[5379][      debug] 
+[5379][      debug] *** Beginning capture of file /home/mayar/libpng-1.6.40/pngtest.c ***
+[5379][      debug] Loading the following linters files: /home/mayar/infer-linux64-v1.1.0/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[5379][      debug] Elapsed: 126ms.
+[5379][      debug] GC stats for capture:
+[5379][      debug]   minor_words: 9.37272e+06
+[5379][      debug]   promoted_words: 915014
+[5379][      debug]   major_words: 976539
+[5379][      debug]   minor_collections: 11
+[5379][      debug]   major_collections: 2
+[5379][      debug]   compactions: 0
+[5379][      debug]   top_heap_words: 1157632
+[5379][      debug]   
+[5379][      debug] GC stats for main_process_full:
+[5379][      debug]   minor_words: 1.07957e+07
+[5379][      debug]   promoted_words: 1.08059e+06
+[5379][      debug]   major_words: 1.16277e+06
+[5379][      debug]   minor_collections: 15
+[5379][      debug]   major_collections: 4
+[5379][      debug]   compactions: 1
+[5379][      debug]   top_heap_words: 1157632
+[5379][      debug]   
+[5379][environment] Scheduler: file
+[5379][environment] Cores used: 2
+[5379][environment] 
+[5447][environment] CWD = /home/mayar/libpng-1.6.40
+[5447][environment] No .inferconfig file found
+[5447][environment] Project root = /home/mayar/libpng-1.6.40
+[5447][environment] INFER_ARGS =   @/tmp/args.tmp.fc91c6
+[5447][environment] command line arguments:   gcc -g -O2 -o .libs/pngtest pngtest.o
+[5447][environment]                           ./.libs/libpng16.so -lz -lm
+[5447][environment] Available memory at startup: 2520 MB
+[5447][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), dotnet-resource-leak (C#/.Net), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java, C#/.Net)
+[5447][      debug] GC stats for capture:
+[5447][      debug]   minor_words: 6748
+[5447][      debug]   promoted_words: 0
+[5447][      debug]   major_words: 0
+[5447][      debug]   minor_collections: 0
+[5447][      debug]   major_collections: 0
+[5447][      debug]   compactions: 0
+[5447][      debug]   top_heap_words: 188416
+[5447][      debug]   
+[5447][      debug] GC stats for main_process_full:
+[5447][      debug]   minor_words: 1.42808e+06
+[5447][      debug]   promoted_words: 165531
+[5447][      debug]   major_words: 186183
+[5447][      debug]   minor_collections: 4
+[5447][      debug]   major_collections: 2
+[5447][      debug]   compactions: 1
+[5447][      debug]   top_heap_words: 188416
+[5447][      debug]   
+[5447][environment] Scheduler: file
+[5447][environment] Cores used: 2
+[5447][environment] 
+[5458][environment] CWD = /home/mayar/libpng-1.6.40
+[5458][environment] No .inferconfig file found
+[5458][environment] Project root = /home/mayar/libpng-1.6.40
+[5458][environment] INFER_ARGS =   @/tmp/args.tmp.352cd1
+[5458][environment] command line arguments:   gcc -DHAVE_CONFIG_H -I. -g -O2 -MT
+[5458][environment]                           contrib/libtests/pngunknown.o -MD -MP -MF
+[5458][environment]                           contrib/libtests/.deps/pngunknown.Tpo -c -o
+[5458][environment]                           contrib/libtests/pngunknown.o
+[5458][environment]                           contrib/libtests/pngunknown.c
+[5458][environment] Available memory at startup: 2528 MB
+[5458][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), dotnet-resource-leak (C#/.Net), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java, C#/.Net)
+[5458][      debug] 
+[5458][      debug] *** Beginning capture of file /home/mayar/libpng-1.6.40/contrib/libtests/pngunknown.c ***
+[5458][      debug] Loading the following linters files: /home/mayar/infer-linux64-v1.1.0/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[5458][      debug] Elapsed: 160ms.
+[5458][      debug] GC stats for capture:
+[5458][      debug]   minor_words: 8.68182e+06
+[5458][      debug]   promoted_words: 854385
+[5458][      debug]   major_words: 911837
+[5458][      debug]   minor_collections: 10
+[5458][      debug]   major_collections: 1
+[5458][      debug]   compactions: 0
+[5458][      debug]   top_heap_words: 1157632
+[5458][      debug]   
+[5458][      debug] GC stats for main_process_full:
+[5458][      debug]   minor_words: 1.01048e+07
+[5458][      debug]   promoted_words: 1.01998e+06
+[5458][      debug]   major_words: 1.09809e+06
+[5458][      debug]   minor_collections: 14
+[5458][      debug]   major_collections: 3
+[5458][      debug]   compactions: 1
+[5458][      debug]   top_heap_words: 1157632
+[5458][      debug]   
+[5458][environment] Scheduler: file
+[5458][environment] Cores used: 2
+[5458][environment] 
+[5526][environment] CWD = /home/mayar/libpng-1.6.40
+[5526][environment] No .inferconfig file found
+[5526][environment] Project root = /home/mayar/libpng-1.6.40
+[5526][environment] INFER_ARGS =   @/tmp/args.tmp.fc6633
+[5526][environment] command line arguments:   gcc -g -O2 -o .libs/pngunknown
+[5526][environment]                           contrib/libtests/pngunknown.o ./.libs/libpng16.so
+[5526][environment]                           -lz -lm
+[5526][environment] Available memory at startup: 2530 MB
+[5526][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), dotnet-resource-leak (C#/.Net), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java, C#/.Net)
+[5526][      debug] GC stats for capture:
+[5526][      debug]   minor_words: 6774
+[5526][      debug]   promoted_words: 0
+[5526][      debug]   major_words: 0
+[5526][      debug]   minor_collections: 0
+[5526][      debug]   major_collections: 0
+[5526][      debug]   compactions: 0
+[5526][      debug]   top_heap_words: 188416
+[5526][      debug]   
+[5526][      debug] GC stats for main_process_full:
+[5526][      debug]   minor_words: 1.42813e+06
+[5526][      debug]   promoted_words: 165537
+[5526][      debug]   major_words: 186189
+[5526][      debug]   minor_collections: 4
+[5526][      debug]   major_collections: 2
+[5526][      debug]   compactions: 1
+[5526][      debug]   top_heap_words: 188416
+[5526][      debug]   
+[5526][environment] Scheduler: file
+[5526][environment] Cores used: 2
+[5526][environment] 
+[5537][environment] CWD = /home/mayar/libpng-1.6.40
+[5537][environment] No .inferconfig file found
+[5537][environment] Project root = /home/mayar/libpng-1.6.40
+[5537][environment] INFER_ARGS =   @/tmp/args.tmp.add52d
+[5537][environment] command line arguments:   gcc -DHAVE_CONFIG_H -I. -g -O2 -MT
+[5537][environment]                           contrib/libtests/pngstest.o -MD -MP -MF
+[5537][environment]                           contrib/libtests/.deps/pngstest.Tpo -c -o
+[5537][environment]                           contrib/libtests/pngstest.o
+[5537][environment]                           contrib/libtests/pngstest.c
+[5537][environment] Available memory at startup: 2530 MB
+[5537][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), dotnet-resource-leak (C#/.Net), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java, C#/.Net)
+[5537][      debug] 
+[5537][      debug] *** Beginning capture of file /home/mayar/libpng-1.6.40/contrib/libtests/pngstest.c ***
+[5537][      debug] Loading the following linters files: /home/mayar/infer-linux64-v1.1.0/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[5537][      debug] Elapsed: 367ms.
+[5537][      debug] GC stats for capture:
+[5537][      debug]   minor_words: 2.98744e+07
+[5537][      debug]   promoted_words: 2.10426e+06
+[5537][      debug]   major_words: 2.24537e+06
+[5537][      debug]   minor_collections: 33
+[5537][      debug]   major_collections: 3
+[5537][      debug]   compactions: 0
+[5537][      debug]   top_heap_words: 2330624
+[5537][      debug]   
+[5537][      debug] GC stats for main_process_full:
+[5537][      debug]   minor_words: 3.12974e+07
+[5537][      debug]   promoted_words: 2.26986e+06
+[5537][      debug]   major_words: 2.43162e+06
+[5537][      debug]   minor_collections: 37
+[5537][      debug]   major_collections: 5
+[5537][      debug]   compactions: 1
+[5537][      debug]   top_heap_words: 2330624
+[5537][      debug]   
+[5537][environment] Scheduler: file
+[5537][environment] Cores used: 2
+[5537][environment] 
+[5605][environment] CWD = /home/mayar/libpng-1.6.40
+[5605][environment] No .inferconfig file found
+[5605][environment] Project root = /home/mayar/libpng-1.6.40
+[5605][environment] INFER_ARGS =   @/tmp/args.tmp.432a51
+[5605][environment] command line arguments:   gcc -g -O2 -o .libs/pngstest
+[5605][environment]                           contrib/libtests/pngstest.o ./.libs/libpng16.so -lz
+[5605][environment]                           -lm
+[5605][environment] Available memory at startup: 2529 MB
+[5605][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), dotnet-resource-leak (C#/.Net), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java, C#/.Net)
+[5605][      debug] GC stats for capture:
+[5605][      debug]   minor_words: 6767
+[5605][      debug]   promoted_words: 0
+[5605][      debug]   major_words: 0
+[5605][      debug]   minor_collections: 0
+[5605][      debug]   major_collections: 0
+[5605][      debug]   compactions: 0
+[5605][      debug]   top_heap_words: 188416
+[5605][      debug]   
+[5605][      debug] GC stats for main_process_full:
+[5605][      debug]   minor_words: 1.42812e+06
+[5605][      debug]   promoted_words: 165535
+[5605][      debug]   major_words: 186187
+[5605][      debug]   minor_collections: 4
+[5605][      debug]   major_collections: 2
+[5605][      debug]   compactions: 1
+[5605][      debug]   top_heap_words: 188416
+[5605][      debug]   
+[5605][environment] Scheduler: file
+[5605][environment] Cores used: 2
+[5605][environment] 
+[5616][environment] CWD = /home/mayar/libpng-1.6.40
+[5616][environment] No .inferconfig file found
+[5616][environment] Project root = /home/mayar/libpng-1.6.40
+[5616][environment] INFER_ARGS =   @/tmp/args.tmp.5e8df0
+[5616][environment] command line arguments:   gcc -DHAVE_CONFIG_H -I. -g -O2 -MT
+[5616][environment]                           contrib/libtests/pngvalid.o -MD -MP -MF
+[5616][environment]                           contrib/libtests/.deps/pngvalid.Tpo -c -o
+[5616][environment]                           contrib/libtests/pngvalid.o
+[5616][environment]                           contrib/libtests/pngvalid.c
+[5616][environment] Available memory at startup: 2533 MB
+[5616][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), dotnet-resource-leak (C#/.Net), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java, C#/.Net)
+[5616][      debug] 
+[5616][      debug] *** Beginning capture of file /home/mayar/libpng-1.6.40/contrib/libtests/pngvalid.c ***
+[5616][      debug] Loading the following linters files: /home/mayar/infer-linux64-v1.1.0/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[5616][      debug] Elapsed: 966ms.
+[5616][      debug] GC stats for capture:
+[5616][      debug]   minor_words: 7.66575e+07
+[5616][      debug]   promoted_words: 5.19622e+06
+[5616][      debug]   major_words: 5.60794e+06
+[5616][      debug]   minor_collections: 76
+[5616][      debug]   major_collections: 4
+[5616][      debug]   compactions: 0
+[5616][      debug]   top_heap_words: 5392896
+[5616][      debug]   
+[5616][      debug] GC stats for main_process_full:
+[5616][      debug]   minor_words: 7.80805e+07
+[5616][      debug]   promoted_words: 5.36182e+06
+[5616][      debug]   major_words: 5.79419e+06
+[5616][      debug]   minor_collections: 80
+[5616][      debug]   major_collections: 6
+[5616][      debug]   compactions: 1
+[5616][      debug]   top_heap_words: 5392896
+[5616][      debug]   
+[5616][environment] Scheduler: file
+[5616][environment] Cores used: 2
+[5616][environment] 
+[5684][environment] CWD = /home/mayar/libpng-1.6.40
+[5684][environment] No .inferconfig file found
+[5684][environment] Project root = /home/mayar/libpng-1.6.40
+[5684][environment] INFER_ARGS =   @/tmp/args.tmp.b39ae3
+[5684][environment] command line arguments:   gcc -g -O2 -o .libs/pngvalid
+[5684][environment]                           contrib/libtests/pngvalid.o ./.libs/libpng16.so -lz
+[5684][environment]                           -lm
+[5684][environment] Available memory at startup: 2520 MB
+[5684][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), dotnet-resource-leak (C#/.Net), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java, C#/.Net)
+[5684][      debug] GC stats for capture:
+[5684][      debug]   minor_words: 6767
+[5684][      debug]   promoted_words: 0
+[5684][      debug]   major_words: 0
+[5684][      debug]   minor_collections: 0
+[5684][      debug]   major_collections: 0
+[5684][      debug]   compactions: 0
+[5684][      debug]   top_heap_words: 188416
+[5684][      debug]   
+[5684][      debug] GC stats for main_process_full:
+[5684][      debug]   minor_words: 1.42812e+06
+[5684][      debug]   promoted_words: 165535
+[5684][      debug]   major_words: 186187
+[5684][      debug]   minor_collections: 4
+[5684][      debug]   major_collections: 2
+[5684][      debug]   compactions: 1
+[5684][      debug]   top_heap_words: 188416
+[5684][      debug]   
+[5684][environment] Scheduler: file
+[5684][environment] Cores used: 2
+[5684][environment] 
+[5695][environment] CWD = /home/mayar/libpng-1.6.40
+[5695][environment] No .inferconfig file found
+[5695][environment] Project root = /home/mayar/libpng-1.6.40
+[5695][environment] INFER_ARGS =   @/tmp/args.tmp.39fa5a
+[5695][environment] command line arguments:   gcc -DHAVE_CONFIG_H -I. -g -O2 -MT
+[5695][environment]                           contrib/libtests/pngimage.o -MD -MP -MF
+[5695][environment]                           contrib/libtests/.deps/pngimage.Tpo -c -o
+[5695][environment]                           contrib/libtests/pngimage.o
+[5695][environment]                           contrib/libtests/pngimage.c
+[5695][environment] Available memory at startup: 2527 MB
+[5695][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), dotnet-resource-leak (C#/.Net), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java, C#/.Net)
+[5695][      debug] 
+[5695][      debug] *** Beginning capture of file /home/mayar/libpng-1.6.40/contrib/libtests/pngimage.c ***
+[5695][      debug] Loading the following linters files: /home/mayar/infer-linux64-v1.1.0/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[5695][      debug] Elapsed: 157ms.
+[5695][      debug] GC stats for capture:
+[5695][      debug]   minor_words: 1.1037e+07
+[5695][      debug]   promoted_words: 990481
+[5695][      debug]   major_words: 1.05726e+06
+[5695][      debug]   minor_collections: 13
+[5695][      debug]   major_collections: 2
+[5695][      debug]   compactions: 0
+[5695][      debug]   top_heap_words: 1157632
+[5695][      debug]   
+[5695][      debug] GC stats for main_process_full:
+[5695][      debug]   minor_words: 1.246e+07
+[5695][      debug]   promoted_words: 1.15608e+06
+[5695][      debug]   major_words: 1.2435e+06
+[5695][      debug]   minor_collections: 17
+[5695][      debug]   major_collections: 4
+[5695][      debug]   compactions: 1
+[5695][      debug]   top_heap_words: 1157632
+[5695][      debug]   
+[5695][environment] Scheduler: file
+[5695][environment] Cores used: 2
+[5695][environment] 
+[5763][environment] CWD = /home/mayar/libpng-1.6.40
+[5763][environment] No .inferconfig file found
+[5763][environment] Project root = /home/mayar/libpng-1.6.40
+[5763][environment] INFER_ARGS =   @/tmp/args.tmp.8af387
+[5763][environment] command line arguments:   gcc -g -O2 -o .libs/pngimage
+[5763][environment]                           contrib/libtests/pngimage.o ./.libs/libpng16.so -lz
+[5763][environment]                           -lm
+[5763][environment] Available memory at startup: 2523 MB
+[5763][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), dotnet-resource-leak (C#/.Net), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java, C#/.Net)
+[5763][      debug] GC stats for capture:
+[5763][      debug]   minor_words: 6767
+[5763][      debug]   promoted_words: 0
+[5763][      debug]   major_words: 0
+[5763][      debug]   minor_collections: 0
+[5763][      debug]   major_collections: 0
+[5763][      debug]   compactions: 0
+[5763][      debug]   top_heap_words: 188416
+[5763][      debug]   
+[5763][      debug] GC stats for main_process_full:
+[5763][      debug]   minor_words: 1.42812e+06
+[5763][      debug]   promoted_words: 165535
+[5763][      debug]   major_words: 186187
+[5763][      debug]   minor_collections: 4
+[5763][      debug]   major_collections: 2
+[5763][      debug]   compactions: 1
+[5763][      debug]   top_heap_words: 188416
+[5763][      debug]   
+[5763][environment] Scheduler: file
+[5763][environment] Cores used: 2
+[5763][environment] 
+[5774][environment] CWD = /home/mayar/libpng-1.6.40
+[5774][environment] No .inferconfig file found
+[5774][environment] Project root = /home/mayar/libpng-1.6.40
+[5774][environment] INFER_ARGS =   @/tmp/args.tmp.665b09
+[5774][environment] command line arguments:   gcc -DHAVE_CONFIG_H -I. -g -O2 -MT
+[5774][environment]                           contrib/tools/pngcp.o -MD -MP -MF
+[5774][environment]                           contrib/tools/.deps/pngcp.Tpo -c -o
+[5774][environment]                           contrib/tools/pngcp.o contrib/tools/pngcp.c
+[5774][environment] Available memory at startup: 2529 MB
+[5774][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), dotnet-resource-leak (C#/.Net), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java, C#/.Net)
+[5774][      debug] 
+[5774][      debug] *** Beginning capture of file /home/mayar/libpng-1.6.40/contrib/tools/pngcp.c ***
+[5774][      debug] Loading the following linters files: /home/mayar/infer-linux64-v1.1.0/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[5774][      debug] Elapsed: 252ms.
+[5774][      debug] GC stats for capture:
+[5774][      debug]   minor_words: 1.56278e+07
+[5774][      debug]   promoted_words: 1.29172e+06
+[5774][      debug]   major_words: 1.38428e+06
+[5774][      debug]   minor_collections: 17
+[5774][      debug]   major_collections: 2
+[5774][      debug]   compactions: 0
+[5774][      debug]   top_heap_words: 1531904
+[5774][      debug]   
+[5774][      debug] GC stats for main_process_full:
+[5774][      debug]   minor_words: 1.70508e+07
+[5774][      debug]   promoted_words: 1.45731e+06
+[5774][      debug]   major_words: 1.57052e+06
+[5774][      debug]   minor_collections: 21
+[5774][      debug]   major_collections: 4
+[5774][      debug]   compactions: 1
+[5774][      debug]   top_heap_words: 1531904
+[5774][      debug]   
+[5774][environment] Scheduler: file
+[5774][environment] Cores used: 2
+[5774][environment] 
+[5842][environment] CWD = /home/mayar/libpng-1.6.40
+[5842][environment] No .inferconfig file found
+[5842][environment] Project root = /home/mayar/libpng-1.6.40
+[5842][environment] INFER_ARGS =   @/tmp/args.tmp.68f973
+[5842][environment] command line arguments:   gcc -g -O2 -o .libs/pngcp contrib/tools/pngcp.o
+[5842][environment]                           ./.libs/libpng16.so -lz -lm
+[5842][environment] Available memory at startup: 2516 MB
+[5842][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), dotnet-resource-leak (C#/.Net), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java, C#/.Net)
+[5842][      debug] GC stats for capture:
+[5842][      debug]   minor_words: 6756
+[5842][      debug]   promoted_words: 0
+[5842][      debug]   major_words: 0
+[5842][      debug]   minor_collections: 0
+[5842][      debug]   major_collections: 0
+[5842][      debug]   compactions: 0
+[5842][      debug]   top_heap_words: 188416
+[5842][      debug]   
+[5842][      debug] GC stats for main_process_full:
+[5842][      debug]   minor_words: 1.4281e+06
+[5842][      debug]   promoted_words: 165533
+[5842][      debug]   major_words: 186185
+[5842][      debug]   minor_collections: 4
+[5842][      debug]   major_collections: 2
+[5842][      debug]   compactions: 1
+[5842][      debug]   top_heap_words: 188416
+[5842][      debug]   
+[5842][environment] Scheduler: file
+[5842][environment] Cores used: 2
+[5842][environment] 
+[5853][environment] CWD = /home/mayar/libpng-1.6.40
+[5853][environment] No .inferconfig file found
+[5853][environment] Project root = /home/mayar/libpng-1.6.40
+[5853][environment] INFER_ARGS =   @/tmp/args.tmp.ffef40
+[5853][environment] command line arguments:   gcc -DHAVE_CONFIG_H -I. -g -O2 -MT
+[5853][environment]                           contrib/libtests/timepng.o -MD -MP -MF
+[5853][environment]                           contrib/libtests/.deps/timepng.Tpo -c -o
+[5853][environment]                           contrib/libtests/timepng.o
+[5853][environment]                           contrib/libtests/timepng.c
+[5853][environment] Available memory at startup: 2517 MB
+[5853][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), dotnet-resource-leak (C#/.Net), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java, C#/.Net)
+[5853][      debug] 
+[5853][      debug] *** Beginning capture of file /home/mayar/libpng-1.6.40/contrib/libtests/timepng.c ***
+[5853][      debug] Loading the following linters files: /home/mayar/infer-linux64-v1.1.0/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[5853][      debug] Elapsed: 86.248ms.
+[5853][      debug] GC stats for capture:
+[5853][      debug]   minor_words: 4.9226e+06
+[5853][      debug]   promoted_words: 536758
+[5853][      debug]   major_words: 568572
+[5853][      debug]   minor_collections: 6
+[5853][      debug]   major_collections: 1
+[5853][      debug]   compactions: 0
+[5853][      debug]   top_heap_words: 760832
+[5853][      debug]   
+[5853][      debug] GC stats for main_process_full:
+[5853][      debug]   minor_words: 6.34559e+06
+[5853][      debug]   promoted_words: 702354
+[5853][      debug]   major_words: 754820
+[5853][      debug]   minor_collections: 10
+[5853][      debug]   major_collections: 3
+[5853][      debug]   compactions: 1
+[5853][      debug]   top_heap_words: 760832
+[5853][      debug]   
+[5853][environment] Scheduler: file
+[5853][environment] Cores used: 2
+[5853][environment] 
+[5921][environment] CWD = /home/mayar/libpng-1.6.40
+[5921][environment] No .inferconfig file found
+[5921][environment] Project root = /home/mayar/libpng-1.6.40
+[5921][environment] INFER_ARGS =   @/tmp/args.tmp.9e6ff2
+[5921][environment] command line arguments:   gcc -g -O2 -o .libs/timepng
+[5921][environment]                           contrib/libtests/timepng.o ./.libs/libpng16.so -lz
+[5921][environment]                           -lm
+[5921][environment] Available memory at startup: 2523 MB
+[5921][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), dotnet-resource-leak (C#/.Net), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java, C#/.Net)
+[5921][      debug] GC stats for capture:
+[5921][      debug]   minor_words: 6764
+[5921][      debug]   promoted_words: 0
+[5921][      debug]   major_words: 0
+[5921][      debug]   minor_collections: 0
+[5921][      debug]   major_collections: 0
+[5921][      debug]   compactions: 0
+[5921][      debug]   top_heap_words: 188416
+[5921][      debug]   
+[5921][      debug] GC stats for main_process_full:
+[5921][      debug]   minor_words: 1.42811e+06
+[5921][      debug]   promoted_words: 165535
+[5921][      debug]   major_words: 186187
+[5921][      debug]   minor_collections: 4
+[5921][      debug]   major_collections: 2
+[5921][      debug]   compactions: 1
+[5921][      debug]   top_heap_words: 188416
+[5921][      debug]   
+[5921][environment] Scheduler: file
+[5921][environment] Cores used: 2
+[5921][environment] [3949][      debug] GC stats for capture:
+[3949][      debug]   minor_words: 1541
+[3949][      debug]   promoted_words: 0
+[3949][      debug]   major_words: 0
+[3949][      debug]   minor_collections: 0
+[3949][      debug]   major_collections: 0
+[3949][      debug]   compactions: 0
+[3949][      debug]   top_heap_words: 760832
+[3949][      debug]   
+[3949][environment] Parallel jobs: 2
+[3949][   progress] Found 30 source files to analyze in /home/mayar/libpng-1.6.40/infer-out
+[5928][   progress] pngset.c starting
+[5929][   progress] contrib/tools/png-fix-itxt.c starting
+[5928][   progress] pngset.c DONE
+[5928][   progress] mips/filter_msa_intrinsics.c starting
+[5928][   progress] mips/filter_msa_intrinsics.c DONE
+[5928][   progress] pngread.c starting
+[5928][   progress] pngread.c DONE
+[5928][   progress] pngwio.c starting
+[5928][   progress] pngwio.c DONE
+[5928][   progress] mips/mips_init.c starting
+[5928][   progress] mips/mips_init.c DONE
+[5928][   progress] pngpread.c starting
+[5929][   progress] contrib/tools/png-fix-itxt.c DONE
+[5929][   progress] pngwutil.c starting
+[5929][   progress] pngwutil.c DONE
+[5929][   progress] contrib/tools/pngcp.c starting
+[5928][   progress] pngpread.c DONE
+[5928][   progress] pngmem.c starting
+[5928][   progress] pngmem.c DONE
+[5928][   progress] pngtrans.c starting
+[5929][   progress] contrib/tools/pngcp.c DONE
+[5929][   progress] pngerror.c starting
+[5929][   progress] pngerror.c DONE
+[5929][   progress] contrib/libtests/pngstest.c starting
+[5928][   progress] pngtrans.c DONE
+[5928][   progress] contrib/libtests/timepng.c starting
+[5928][   progress] contrib/libtests/timepng.c DONE
+[5928][   progress] powerpc/filter_vsx_intrinsics.c starting
+[5928][   progress] powerpc/filter_vsx_intrinsics.c DONE
+[5928][   progress] pngrutil.c starting
+[5928][   progress] pngrutil.c DONE
+[5928][   progress] intel/intel_init.c starting
+[5928][   progress] intel/intel_init.c DONE
+[5928][   progress] pngget.c starting
+[5928][   progress] pngget.c DONE
+[5928][   progress] pngwtran.c starting
+[5928][   progress] pngwtran.c DONE
+[5928][   progress] pngwrite.c starting
+[5928][   progress] pngwrite.c DONE
+[5928][   progress] pngrio.c starting
+[5928][   progress] pngrio.c DONE
+[5928][   progress] contrib/libtests/pngimage.c starting
+[5928][   progress] contrib/libtests/pngimage.c DONE
+[5928][   progress] pngrtran.c starting
+[5928][   progress] pngrtran.c DONE
+[5928][   progress] png.c starting
+[5929][   progress] contrib/libtests/pngstest.c DONE
+[5929][   progress] contrib/libtests/pngvalid.c starting
+[5928][   progress] png.c DONE
+[5928][   progress] intel/filter_sse2_intrinsics.c starting
+[5928][   progress] intel/filter_sse2_intrinsics.c DONE
+[5928][   progress] contrib/tools/pngfix.c starting
+[5928][ intern err] .... Sanity Check Failure while Matching Index-Strexps ....
+    IDX1: @f$36, STREXP1: @f$37
+        IDX2: _t$2041, STREXP2: _t$2042
+    
+.... Sanity Check Failure while Matching Index-Strexps ....
+    IDX1: @f$36, STREXP1: @f$37
+        IDX2: _t$2088, STREXP2: _t$2089
+    
+
+[5928][   progress] contrib/tools/pngfix.c DONE
+[5928][   progress] powerpc/powerpc_init.c starting
+[5928][   progress] powerpc/powerpc_init.c DONE
+[5928][   progress] pngtest.c starting
+[5928][   progress] pngtest.c DONE
+[5928][   progress] contrib/libtests/pngunknown.c starting
+[5928][   progress] contrib/libtests/pngunknown.c DONE
+[5929][   progress] contrib/libtests/pngvalid.c DONE
+[3949][      debug] Backend stats:
+[3949][      debug]   summary_file_try_load= 6802
+[3949][      debug]   summary_read_from_disk= 530
+[3949][      debug]   summary_cache_hits= 76382 (91%)
+[3949][      debug]   summary_cache_misses= 6802
+[3949][      debug]   ondemand_procs_analyzed= 1167
+[3949][      debug]   ondemand_local_cache_hits= 30975 (95%)
+[3949][      debug]   ondemand_local_cache_misses= 1613
+[3949][      debug]   proc_locker_lock_time_user= 0.00000000
+[3949][      debug]   proc_locker_lock_time_sys= 0.00000000
+[3949][      debug]   proc_locker_lock_time_wall= 0.00000000
+[3949][      debug]   proc_locker_unlock_time_user= 0.00000000
+[3949][      debug]   proc_locker_unlock_time_sys= 0.00000000
+[3949][      debug]   proc_locker_unlock_time_wall= 0.00000000
+[3949][      debug]   restart_scheduler_useful_time_user= 0.00000000
+[3949][      debug]   restart_scheduler_useful_time_sys= 0.00000000
+[3949][      debug]   restart_scheduler_useful_time_wall= 0.00000000
+[3949][      debug]   restart_scheduler_total_time_user= 0.00000000
+[3949][      debug]   restart_scheduler_total_time_sys= 0.00000000
+[3949][      debug]   restart_scheduler_total_time_wall= 0.00000000
+[3949][      debug]   
+[3949][      debug] GC stats for backend_stats.gc_stats_add.:
+[3949][      debug]   minor_words: 8.59019e+10
+[3949][      debug]   promoted_words: 8.51631e+08
+[3949][      debug]   major_words: 9.7851e+08
+[3949][      debug]   minor_collections: 82202
+[3949][      debug]   major_collections: 616
+[3949][      debug]   compactions: 0
+[3949][      debug]   top_heap_words: 27978752
+[3949][      debug]   
+[3949][      debug] GC stats for backend_stats.gc_stats_max.:
+[3949][      debug]   minor_words: 4.76562e+10
+[3949][      debug]   promoted_words: 4.69348e+08
+[3949][      debug]   major_words: 5.50765e+08
+[3949][      debug]   minor_collections: 45592
+[3949][      debug]   major_collections: 310
+[3949][      debug]   compactions: 0
+[3949][      debug]   top_heap_words: 14346752
+[3949][      debug]   
+[3949][      debug] Average over 2 processes
+[3949][      debug] GC stats for backend_stats.gc_stats_average.:
+[3949][      debug]   minor_words: 4.2951e+10
+[3949][      debug]   promoted_words: 4.25816e+08
+[3949][      debug]   major_words: 4.89255e+08
+[3949][      debug]   minor_collections: 41101
+[3949][      debug]   major_collections: 308
+[3949][      debug]   compactions: 0
+[3949][      debug]   top_heap_words: 13989376
+[3949][      debug]   
+[3949][      debug] Analysis phase finished in 2min16s
+[3949][      debug] backend_stats.scheduler_process_analysis_time_user= 0.16793700
+[3949][      debug] backend_stats.scheduler_process_analysis_time_sys= 0.25478000
+[3949][      debug] backend_stats.scheduler_process_analysis_time_wall= 136.88141680
+[3949][      debug] GC stats for analysis_scheduler:
+[3949][      debug]   minor_words: 5.47664e+07
+[3949][      debug]   promoted_words: 174452
+[3949][      debug]   major_words: 183158
+[3949][      debug]   minor_collections: 53
+[3949][      debug]   major_collections: 2
+[3949][      debug]   compactions: 1
+[3949][      debug]   top_heap_words: 875008
+[3949][      debug]   
+[3949][      debug] GC stats for report:
+[3949][      debug]   minor_words: 6.75132e+06
+[3949][      debug]   promoted_words: 32232
+[3949][      debug]   major_words: 69769
+[3949][      debug]   minor_collections: 7
+[3949][      debug]   major_collections: 1
+[3949][      debug]   compactions: 0
+[3949][      debug]   top_heap_words: 875008
+[3949][      debug]   
+[3949][      debug] GC stats for main_process_full:
+[3949][      debug]   minor_words: 6.32025e+07
+[3949][      debug]   promoted_words: 372157
+[3949][      debug]   major_words: 944441
+[3949][      debug]   minor_collections: 64
+[3949][      debug]   major_collections: 5
+[3949][      debug]   compactions: 2
+[3949][      debug]   top_heap_words: 875008
+[3949][      debug]   
+[3950][      debug] Sqlite write daemon: terminating
